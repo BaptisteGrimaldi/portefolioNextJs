@@ -8,13 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'custom-red': '#FF0000',
+        'custom-blue': '#0000FF',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        roboto: ['Roboto Serif', 'serif'],
+      }
     },
   },
   plugins: [],
 }
+
 export default config
