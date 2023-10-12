@@ -10,6 +10,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('../../public/font/robotoSerif/RobotoSerif-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
 p{
   font-family: 'Roboto Serif', serif;
 }

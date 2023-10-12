@@ -22,7 +22,7 @@ export default function NavBar() {
             </div>
           </div>
   
-            <div className='w-8/12 flex justify-center'>
+            <div className='w-8/12 flex justify-center text-sm'>
               <div className='flex justify-between space-x-20 items-center text-white'>
                 <p className='hover:scale-105 hover:opacity-50 cursor-pointer'>Présentation</p>
                 <p className='hover:scale-105 cursor-pointer hover:opacity-50'>Stack technique</p>
