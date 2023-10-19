@@ -1,13 +1,40 @@
+'use client'
+
 import Image from 'next/image'
 import Temoignage from './composant/Temoignage'
 
-const temoignages = [Temoignage({citation:"citation", image:"/moiMidJourney.png", nom:"nom", poste:"poste", entreprise:"entreprise"})];
+import React, { useState, useEffect, useRef } from 'react';
 
-// const [temoignage,setTemoignage] = temoignages[0];
 
 export default function Presentation() {
+
+    const temoignages = [
+        Temoignage({citation:"'Je suis content du travail qu'a réalisé baptiste sur le développement de notre SaaS Express'", image:"/thomasMillet.png", nom:"Thomas Millet", poste:"Product Owner", entreprise:"MyConnectedCompany"}),
+        Temoignage({citation:"'Desolé en tant que dev freelance junior il m'est compliqué d'inventer 10 expériences quand on a que 21 ans, à un moment donné faut bien commencé quelque part !'", image:"/moiMidJourney.png", nom:"Votre serviteur", poste:"Developpeur Web", entreprise:"Moi-meme"}),
+    ];
+
+    const [indexTemoignage, setIndexTemoignage] = useState(0);
+
+    const [temoignage,setTemoignage] = useState(temoignages[indexTemoignage]);
+    const indexTemoignageRef = useRef(indexTemoignage);
+  
+    const suivant = () => {
+      setIndexTemoignage(indexTemoignageRef.current + 1);
+    };
+  
+    const avant = () => {
+      setIndexTemoignage(indexTemoignageRef.current - 1);
+    };
+
+    useEffect(() => {
+      indexTemoignageRef.current = indexTemoignage;
+      setTemoignage(temoignages[indexTemoignage])
+      console.log(indexTemoignage);
+    }, [indexTemoignage]);
+    
+
     return (
-        <div className='mt-28 px-36'>
+        <div className='mt-28 w-11/12 absolute left-1/2 transform -translate-x-1/2'>
             <div className='flex h-3/6 '>
                 <div className='w-6/12 flex justify-center'>
                     <Image
@@ -34,15 +61,28 @@ export default function Presentation() {
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/g6RPzygnhho?si=gxX1tibgrAj8Jt7u" title="Test youtube" frameBorder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
 
-            <div className='text-center'>
-                <h1 className='text-2xl text-textRed'>Témoignages</h1>
-                <Temoignage citation="'Je suis content du travail qu'a réalisé baptiste sur le développement de notre SaS Express'" 
-                image="/moiMidJourney.png" 
-                nom="Thomas Millet" 
-                poste="Product Owner" 
-                entreprise="MyConnectedCompany" 
+            <h1 className='text-2xl text-textRed text-center mb-7'>
+                Témoignages
+            </h1>
+
+            <div className='absolute left-1/2 transform -translate-x-1/2'>
+                <Image
+                src={'/flecheDroiteBlanche.png'}
+                alt="Fleche droite blanche"
+                width={70}
+                height={70}
+                className='absolute right-10 top-1/2 transform -translate-y-1/2'
+                onClick={suivant}
                 />
-                
+                <Image
+                src={'/flecheDroiteBlanche.png'}
+                alt="Fleche gauche blanche"
+                width={70}
+                height={70}
+                className='absolute rotate-180 left-10 top-1/2 transform -translate-y-1/2'
+                onClick={avant}
+                />
+                {temoignage}
             </div>
 
         </div>

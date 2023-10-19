@@ -1,35 +1,34 @@
-import Image from 'next/image'
+import Image from 'next/image';
+import React, { useState, useEffect, useRef } from 'react';
 
 interface TemoignageProps {
-    citation: string;
-    image: string;
-    nom: string;
-    poste: string;
-    entreprise: string;
-  }
+  citation: string;
+  image: string;
+  nom: string;
+  poste: string;
+  entreprise: string;
+}
 
-export default function Temoignage({citation, image, nom , poste , entreprise}: TemoignageProps) {
-    return (
-        <div className='flex justify-center mb-28'>
-            <div className='mt-[34px] bg-red-600 px-2 py-5 w-10/12 rounded-lg text-white'>
-                <p className='text-lg'>{citation}</p>
-                <div className='flex justify-center'>
-                    <div className='w-6/12 flex justify-center'>
-                        <Image
-                            src={image}
-                            alt="Description de l'image"
-                            width={50} 
-                            height={50}
-                        />
-                    </div>
-                </div>
-                <div className='justify-center flex flex-col text-lg'>
-                    <p className='text-lg font-robotoBold'>{nom}</p>
-                    <p>{poste}</p>
-                    <p>{entreprise}</p>
+export default function Temoignage({ citation, image, nom, poste, entreprise}: TemoignageProps) {
 
-                </div>
-            </div>
+
+  return (
+    <div className='flex justify-center text-white'>
+      <div className='w-full bg-red-600 text-center rounded p-5'>
+        <p className=''>{citation}</p>
+        <Image
+          src={image}
+          alt="Photo de profil"
+          width={90}
+          height={90}
+          className='mx-auto my-2 rounded-full'
+        />
+        <div className='mx-auto'>
+          <p className=''>{nom}</p>
+          <p>{poste}</p>
+          <p>{entreprise}</p>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
