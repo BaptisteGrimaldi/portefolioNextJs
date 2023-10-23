@@ -9,13 +9,9 @@ export const metadata: Metadata = {
     description: 'Portefolio Baptiste Grimaldi',
 };
 
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
+        <html lang="fr">
             <body className={inter.className}>{children}</body>
         </html>
     );
