@@ -42,11 +42,18 @@ export default function Presentation() {
         });
     };
 
+    function downloadCv() {
+        const link = document.createElement('a');
+        link.href = '/cvBaptisteGrimaldi.pdf';
+        link.download = 'cvBaptisteGrimaldi.pdf';
+        link.click();
+    }
+
     return (
         <div className="mt-28 w-11/12 absolute left-1/2 transform -translate-x-1/2">
             <div className="flex h-3/6 flex flex-col items-center">
                 <div className="w-6/12 flex justify-center mb-6">
-                    <Image src="/moiMidJourney.webp" alt="Description de l'image" width={500} height={500} />
+                    <Image src="/moiMidJourney.webp" alt="avatarMidjourney" width={500} height={500} />
                 </div>
 
                 <div className="text-sm w-10/12 text-justify flex justify-center flex-col items-center">
@@ -82,12 +89,15 @@ export default function Presentation() {
                 {temoignage}
             </div>
 
-            <div className="w-9/12 mx-auto flex mt-[380px]">
+            <div className="w-9/12 mx-auto flex flex-col mt-[380px] text-sm">
                 <Image src={'/curriculumVitae.webp'} alt="Curriculum vitae" width={500} height={500} />
-                <div>
-                    <p>Cv Baptiste Grimaldi</p>
-                    <div>
-                        <p>Download</p>
+                <div className='flex flex-col items-center text-center mt-5'>
+                    <div className='w-10/12 flex justify-center'>
+                        <p>Cv Baptiste Grimaldi</p>
+                    </div>
+                    <div className='flex items-center space-x-2 w-full justify-center mt-2' onClick={downloadCv}>
+                        <Image src={'/iconeTelechargement.webp'} alt="iconeDownload" width={20} height={20} />
+                        <p className='bg-teal-500 px-2 pt-2 pb-1 rounded text-white hover:scale-105 cursor-pointer'>Download</p>
                     </div>
                 </div>
             </div>
