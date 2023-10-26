@@ -10,6 +10,7 @@
     "prettier": "prettier --write ./src/**/*"
   },
   "dependencies": {
+    "@react-hook/window-size": "^3.1.1",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18"

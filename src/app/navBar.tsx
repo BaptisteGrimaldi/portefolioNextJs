@@ -7,7 +7,7 @@ export default function NavBar() {
                 <div className="w-4/12 flex justify-center">
                     <div className="flex justify-between">
                         <div className="mr-4">
-                            <Image src="/moiMidJourney.png" alt="Description de l'image" width={65} height={70} className="rounded-full my-2" />
+                            <Image src="/moiMidJourney.webp" alt="Description de l'image" width={65} height={70} className="rounded-full my-2" />
                         </div>
 
                         <div className="flex items-center">
