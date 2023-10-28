@@ -45,12 +45,12 @@ export default function Presentation() {
     
     return (
         <div className="mt-28 w-11/12 absolute left-1/2 transform -translate-x-1/2">
-            <div className="flex h-3/6 flex flex-col items-center">
-                <div className="w-6/12 flex justify-center mb-6">
-                    <Image src="/moiMidJourney.webp" alt="avatarMidjourney" width={500} height={500} />
+            <div className="flex h-3/6 flex flex-col items-center xl:flex flex-row">
+                <div className="w-6/12 flex justify-center mb-6 xl:w-6/12">
+                    <Image src="/moiMidJourney.webp" alt="avatarMidjourney" width={100} height={100} />
                 </div>
 
-                <div className="text-sm w-10/12 text-justify flex justify-center flex-col items-center md:text-lg">
+                <div className="text-sm w-10/12 text-justify flex justify-center flex-col items-center md:text-lg xl:w-6/12">
                     <div className="w-10/12 h-3/5 flex flex-col justify-between">
                         <p>
                             Bonjour je m&apos;appelle <span className="text-cyan">Baptiste Grimaldi</span>, je suis un développeur full stack autodidacte avec une préférence pour le backend.{' '}
@@ -95,6 +95,8 @@ export default function Presentation() {
                     </div>
                 </div>
             </div>
+
+            <p className='max-w-xs'>test dklfjlsqsqsqsqs qsqsqsqsqsqsqsqs qsqsqsqsqs qsqsqsqsqsqsqsqs qsqsqsqsqs qsqsqsqsqsqsqsq sqsqsqsq sqsqs</p>
         </div>
     );
 }
