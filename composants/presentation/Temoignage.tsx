@@ -16,7 +16,7 @@ export default function Temoignage({ citation, image, nom, poste, entreprise }: 
     return (
         <div className="text-white w-full text-sm h-80 md:text-lg">
             <div className="w-full bg-red-600 text-center rounded h-[326px] p-5 flex flex-col justify-center">
-                <p className="custom-max-300-xs">{citation}</p>
+                <p className="custom-max-300-xs px-5">{citation}</p>
                 <Image src={image} alt="Photo de profil" width={90} height={90} className="mx-auto my-2 rounded-full" />
                 <div className="mx-auto">
                     <p className="">{nom}</p>

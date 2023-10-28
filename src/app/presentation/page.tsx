@@ -78,8 +78,8 @@ export default function Presentation() {
             <h1 className="text-lg text-textRed text-center mb-5 md:text-2xl">Témoignages</h1>
 
             <div className="absolute left-1/2 transform -translate-x-1/2 w-10/12 h-[326px]">
-                <Image src={'/flecheDroiteBlanche.webp'} alt="Fleche droite blanche" width={70} height={70} className="absolute right-2 top-1/2 transform -translate-y-1/2" onClick={suivant} />
-                <Image src={'/flecheDroiteBlanche.webp'} alt="Fleche gauche blanche" width={70} height={70} className="absolute rotate-180 left-2 top-1/2 transform -translate-y-1/2" onClick={precedent} />
+                <Image src={'/flecheDroiteBlanche.webp'} alt="Fleche Droite blanche" width={70} height={70} className="absolute right-2 top-1/2 transform -translate-y-1/2 flecheBlancheDroite" onClick={suivant} />
+                <Image src={'/flecheDroiteBlanche.webp'} alt="Fleche Gauche blanche" width={70} height={70} className="absolute rotate-180 left-2 top-1/2 transform -translate-y-1/2 flecheBlancheGauche" onClick={precedent} />
                 {temoignage}
             </div>
 
