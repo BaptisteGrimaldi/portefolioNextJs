@@ -1,8 +1,16 @@
+"use client";
+
 import Image from 'next/image';
-import NavBar from './navBar';
+import { useState } from 'react';
+import Presentation from './presentation/page';
 
-//Page global avec la navbar
 
-export default function Home() {
-    return <NavBar />;
-}
+const Home = () => {
+    return (
+        <Presentation />
+    )
+    
+
+};
+
+export default Home;

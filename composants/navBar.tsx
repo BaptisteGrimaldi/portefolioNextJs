@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-export default function NavBar() {
+const NavBar = () => {
     return (
-        <header className="w-full bg-red-600 h-20 fixed top-0 left-0">
+        <header className="w-full bg-red-600 h-20 fixed top-0 left-0 z-10">
             <div className="flex justify-between h-20">
                 <div className="w-4/12 flex justify-center">
                     <div className="flex justify-between">
@@ -18,7 +18,7 @@ export default function NavBar() {
 
                 <div className="w-8/12 flex justify-center text-sm">
                     <div className="flex justify-between space-x-20 items-center text-white">
-                        <p className="hover:scale-105 hover:opacity-50 cursor-pointer">Présentation</p>
+                        <p className="hover:scale-105 hover:opacity-50 cursor-pointer"><a href="./presentation">Présentation</a></p>
                         <p className="hover:scale-105 cursor-pointer hover:opacity-50">Compétences</p>
                         <p className="hover:scale-105 cursor-pointer hover:opacity-50">Réalisations</p>
                         <p className="hover:scale-105 cursor-pointer hover:opacity-50">Services</p>
@@ -30,4 +30,6 @@ export default function NavBar() {
             </div>
         </header>
     );
-}
+};
+
+export default NavBar;

@@ -24,7 +24,6 @@ p {
     .custom-max-300-xs {
         font-size: 0.75rem; /* 12px */
         line-height: 1rem; /* 16px */
-        
     }
 
     .flecheBlancheDroite {
@@ -32,7 +31,6 @@ p {
         top: 50%;
         transform: scale(0.7) translateY(-50%);
         right: 0;
-        
     }
     .flecheBlancheGauche {
         position: absolute;
@@ -40,4 +38,4 @@ p {
         transform: scale(0.7) rotate(180deg) translateY(50%);
         left: 0;
     }
-  }
+}

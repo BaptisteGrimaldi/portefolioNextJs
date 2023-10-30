@@ -17,6 +17,7 @@ const config: Config = {
         robotoBold: ['Roboto Bold','serif'],
       }
     },
+
   },
   plugins: [],
 }
