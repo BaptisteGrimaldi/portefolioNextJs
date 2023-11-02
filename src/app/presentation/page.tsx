@@ -1,8 +1,8 @@
 'use client';
 
 import Image from 'next/image';
-import Temoignage from '../../../composants/presentation/Temoignage';
-import { downloadFile } from '../../../utils/downloadFile';
+import Temoignage from '../../composants/presentation/Temoignage';
+import { downloadFile } from '../../utils/downloadFile';
 import React, { useState, useEffect, useRef } from 'react';
 
 const Presentation = () => {
@@ -44,7 +44,7 @@ const Presentation = () => {
 
     return (
         <div className="mt-28 w-11/12 absolute left-1/2 transform -translate-x-1/2 z-0">
-            <div className="flex h-3/6 flex flex-col items-center max-w-6xl mx-auto lg:flex-row ">
+            <div className="flex h-3/6 flex-col items-center max-w-6xl mx-auto lg:flex-row ">
                 <div className="w-6/12 flex justify-center mb-6 xl:w-6/12 ">
                     <Image src="/moiMidJourney.webp" alt="avatarMidjourney" width={500} height={500} />
                 </div>
