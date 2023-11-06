@@ -15,8 +15,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="fr">
             <body className={inter.className}>
-                <NavBarBureau visible={false} />
-                <NavBarPhone visible={true} />
+                <NavBarBureau visible={true} />
+                <NavBarPhone visible={false} />
                 {children}
             </body>
         </html>
