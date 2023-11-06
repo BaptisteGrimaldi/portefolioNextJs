@@ -2,17 +2,15 @@ import Image from 'next/image';
 import React, { useState, useEffect, useRef } from 'react';
 import { useWindowWidth } from '@react-hook/window-size';
 
-interface TemoignageProps {
+type TemoignageProps = {
     citation: string;
     image: string;
     nom: string;
     poste: string;
     entreprise: string;
-}
-
+};
 
 export default function Temoignage({ citation, image, nom, poste, entreprise }: TemoignageProps) {
-
     return (
         <div className="text-white w-full text-sm h-80 md:text-lg">
             <div className="w-full bg-red-600 text-center rounded h-[326px] p-5 flex flex-col justify-center">

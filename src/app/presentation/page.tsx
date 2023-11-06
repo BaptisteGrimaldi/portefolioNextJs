@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import Temoignage from '../../composants/presentation/Temoignage';
+import Temoignage from '../../components/presentation/Temoignage';
 import { downloadFile } from '../../utils/downloadFile';
 import React, { useState, useEffect, useRef } from 'react';
 

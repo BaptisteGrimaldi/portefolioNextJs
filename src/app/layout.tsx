@@ -1,7 +1,8 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import NavBar from '../composants/navBar'
+import NavBarBureau from '../components/navBar/NavBarBureau';
+import NavBarPhone from '@/components/navBar/navBarPhone';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -14,7 +15,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     return (
         <html lang="fr">
             <body className={inter.className}>
-                <NavBar />
+                <NavBarBureau visible={false} />
+                <NavBarPhone visible={true} />
                 {children}
             </body>
         </html>
