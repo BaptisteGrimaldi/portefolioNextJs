@@ -1,15 +1,21 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { demandeSwitchNavBar } from '@/components/navBar/function/demandeSwitchNavBar';
 
-const NavBarPhone = ({ visible }: { visible: boolean }) => {
-    if (visible) {
+type Props = {
+    visible: boolean;
+    switchNavBar: () => void;
+};
+
+const NavBarPhone = (props: Props) => {
+    if (props.visible) {
         return (
             <header className="w-full bg-red-600 h-full fixed top-0 left-0 z-10">
-                <Image src="/barreMenu.webp" alt="Description de l'image" width={40} height={40} className="mt-5 ml-5" />
+                <Image src="/barreMenu.webp" alt="icone Menu" width={40} height={40} className="mt-5 ml-5" onClick={() => demandeSwitchNavBar(props)} />
                 <div className=" h-full flex flex-col items-center text-base ">
                     <div className=" flex justify-center mt-9">
                         <div className="flex flex-col  items-center space-y-3">
-                            <Image src="/moiMidJourney.webp" alt="Description de l'image" width={180} height={180} className="rounded-full" />
+                            <Image src="/moiMidJourney.webp" alt="Avatar Midjourney" width={180} height={180} className="rounded-full" />
                             <div className="flex items-center">
                                 <p className="text-white">BAPTISTE GRIMALDI</p>
                             </div>
@@ -18,7 +24,7 @@ const NavBarPhone = ({ visible }: { visible: boolean }) => {
 
                     <div className="flex  justify-center mt-7">
                         <div className="flex flex-col justify-between  items-center space-y-6 text-white text-center">
-                            <div className="bg-red-700 text-white pt-2 px-2 pb-1 rounded w-32 hover:scale-105 cursor-pointer">
+                            <div className="bg-red-700 text-white pt-2 px-2 pb-1 rounded w-32 hover:scale-105 cursor-pointer" onClick={() => demandeSwitchNavBar(props)}>
                                 <p className="hover:scale-105 hover:opacity-50 cursor-pointer">
                                     <Link href="./presentation">Présentation</Link>
                                 </p>
