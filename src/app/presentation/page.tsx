@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Temoignage from '../../components/presentation/Temoignage';
 import { downloadFile } from '../../utils/downloadFile';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 
 const Presentation = () => {
     const temoignages = [
@@ -43,14 +43,14 @@ const Presentation = () => {
     };
 
     return (
-        <div className="mt-28 w-11/12 absolute left-1/2 transform -translate-x-1/2 z-0">
-            <div className="flex h-3/6 flex-col items-center max-w-6xl mx-auto lg:flex-row ">
-                <div className="w-6/12 flex justify-center mb-6 xl:w-6/12 ">
+        <div className="absolute left-1/2 z-0 mt-28 w-11/12 -translate-x-1/2">
+            <div className="mx-auto flex h-3/6 max-w-6xl flex-col items-center lg:flex-row ">
+                <div className="mb-6 flex w-6/12 justify-center xl:w-6/12 ">
                     <Image src="/moiMidJourney.webp" alt="avatarMidjourney" width={500} height={500} />
                 </div>
 
-                <div className="text-sm w-10/12 text-justify flex justify-center flex-col items-center md:text-lg xl:w-6/12">
-                    <div className="w-10/12 h-3/5 flex flex-col justify-between ">
+                <div className="flex w-10/12 flex-col items-center justify-center text-justify text-sm md:text-lg xl:w-6/12">
+                    <div className="flex h-3/5 w-10/12 flex-col justify-between ">
                         <p>
                             Bonjour je m&apos;appelle <span className="text-cyan">Baptiste Grimaldi</span>, je suis un développeur full stack autodidacte avec une préférence pour le backend.{' '}
                         </p>
@@ -64,13 +64,13 @@ const Presentation = () => {
                             Êtes-vous prêt à transformer ce <span className="text-textRed">cauchemar</span> en une <span className="text-cyan">success story</span> ? Ne laissez pas votre projet web se perdre dans <span className="font-robotoBold">l&apos;obscurité</span> !
                         </p>
                     </div>
-                    <div className="mt-8 bg-teal-500 px-2 pt-2 pb-1 rounded text-white hover:scale-105 cursor-pointer">
+                    <div className="mt-8 cursor-pointer rounded bg-teal-500 px-2 pb-1 pt-2 text-white hover:scale-105">
                         <p>Contactez-moi !</p>
                     </div>
                 </div>
             </div>
 
-            <div className="flex justify-center my-14">
+            <div className="my-14 flex justify-center">
                 <iframe
                     className="sm:w-[400px]"
                     width="250"
@@ -83,28 +83,28 @@ const Presentation = () => {
                 ></iframe>
             </div>
 
-            <h1 className="text-lg text-textRed text-center mb-5 md:text-2xl">Témoignages</h1>
+            <h1 className="mb-5 text-center text-lg text-textRed md:text-2xl">Témoignages</h1>
 
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-10/12 h-[326px] max-w-5xl">
-                <Image src={'/flecheDroiteBlanche.webp'} alt="Fleche Droite blanche" width={70} height={70} className="absolute right-2 top-1/2 transform -translate-y-1/2 flecheBlancheDroite" onClick={suivant} />
-                <Image src={'/flecheDroiteBlanche.webp'} alt="Fleche Gauche blanche" width={70} height={70} className="absolute rotate-180 left-2 top-1/2 transform -translate-y-1/2 flecheBlancheGauche" onClick={precedent} />
+            <div className="absolute left-1/2 h-[326px] w-10/12 max-w-5xl -translate-x-1/2">
+                <Image src={'/flecheDroiteBlanche.webp'} alt="Fleche Droite blanche" width={70} height={70} className="flecheBlancheDroite absolute right-2 top-1/2 -translate-y-1/2" onClick={suivant} />
+                <Image src={'/flecheDroiteBlanche.webp'} alt="Fleche Gauche blanche" width={70} height={70} className="flecheBlancheGauche absolute left-2 top-1/2 -translate-y-1/2 rotate-180" onClick={precedent} />
                 {temoignage}
             </div>
 
-            <div className="w-9/12 place-content-between flex flex-col items-center mt-[380px] mb-14 text-sm mx-auto max-w-3xl md:text-lg lg:flex-row">
+            <div className="mx-auto mb-14 mt-[380px] flex w-9/12 max-w-3xl flex-col place-content-between items-center text-sm md:text-lg lg:flex-row">
                 <Image src={'/curriculumVitae.webp'} alt="Curriculum vitae" width={500} height={500} />
-                <div className="flex flex-col items-center text-center mt-5">
+                <div className="mt-5 flex flex-col items-center text-center">
                     <div className="w-full">
                         <p>Cv Baptiste Grimaldi</p>
                     </div>
                     <div
-                        className="flex items-center space-x-3 w-full justify-center mb-5 mt-3"
+                        className="mb-5 mt-3 flex w-full items-center justify-center space-x-3"
                         onClick={() => {
                             downloadFile('cvBaptisteGrimaldi.pdf');
                         }}
                     >
-                        <Image src={'/iconeTelechargement.webp'} alt="iconeDownload" width={20} height={20} className="hover:scale-105 cursor-pointer" />
-                        <p className="bg-teal-500 px-2 pt-2 pb-1 rounded text-white hover:scale-105 cursor-pointer">Download</p>
+                        <Image src={'/iconeTelechargement.webp'} alt="iconeDownload" width={20} height={20} className="cursor-pointer hover:scale-105" />
+                        <p className="cursor-pointer rounded bg-teal-500 px-2 pb-1 pt-2 text-white hover:scale-105">Download</p>
                     </div>
                 </div>
             </div>
