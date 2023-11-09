@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('../styles/presentation/flecheBlanche.css');
+
 @font-face {
     font-family: 'Roboto Serif';
     src: url('../../public/font/robotoSerif/RobotoSerif-Regular.ttf') format('truetype');
@@ -20,22 +22,18 @@ p {
     font-family: 'Roboto Serif', serif;
 }
 
-@media (max-width: 300px) {
-    .custom-max-300-xs {
-        font-size: 0.75rem; /* 12px */
-        line-height: 1rem; /* 16px */
-    }
+.boutonCyanCss {
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: rgb(20 184 166);
+    padding: 8px 8px 4px 8px;
+    color: #fff;
+    white-space: nowrap;
+    width: min-content;
+    min-height: min-content;
+}
 
-    .flecheBlancheDroite {
-        position: absolute;
-        top: 50%;
-        transform: scale(0.7) translateY(-50%);
-        right: 0;
-    }
-    .flecheBlancheGauche {
-        position: absolute;
-        top: 50.5%;
-        transform: scale(0.7) rotate(180deg) translateY(50%);
-        left: 0;
-    }
+.boutonCyanCss:hover {
+    transform: scale(1.05);
 }

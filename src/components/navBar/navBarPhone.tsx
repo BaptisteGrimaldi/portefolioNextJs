@@ -11,11 +11,11 @@ const NavBarPhone = (props: Props) => {
     if (props.visible) {
         return (
             <header className="fixed left-0 top-0 z-10 h-full w-full bg-red-600">
-                <Image src="/barreMenu.webp" alt="icone Menu" width={40} height={40} className="ml-5 mt-5" onClick={() => demandeSwitchNavBar(props)} />
+                <Image src="/assetPresentation/barreMenu.webp" alt="icone Menu" width={40} height={40} className="ml-5 mt-5" onClick={() => demandeSwitchNavBar(props)} />
                 <div className=" flex h-full flex-col items-center text-base ">
                     <div className=" mt-9 flex justify-center">
                         <div className="flex flex-col  items-center space-y-3">
-                            <Image src="/moiMidJourney.webp" alt="Avatar Midjourney" width={180} height={180} className="rounded-full" />
+                            <Image src="/assetPresentation/moiMidJourney.webp" alt="Avatar Midjourney" width={180} height={180} className="rounded-full" />
                             <div className="flex items-center">
                                 <p className="text-white">BAPTISTE GRIMALDI</p>
                             </div>
