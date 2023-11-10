@@ -20,10 +20,10 @@ const competences = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex h-[150px] w-full flex-col items-center">
+                <div className="mt-16 flex h-[150px] w-full flex-col items-center">
                     <div className="absolute flex w-full justify-center">
                         <div className="absolute top-1/2 z-0 h-1 w-full bg-black"></div>
-                        <Image src="/assetCompetences/logoTypescript.webp" alt="Typescript" width={200} height={200} className="z-10" />
+                        <Image src="/assetCompetences/logoTypescript.webp" alt="Typescript" width={150} height={150} className="z-10" />
                     </div>
                 </div>
                 <div className="mt-8 flex flex-col items-center space-y-2 text-sm">
