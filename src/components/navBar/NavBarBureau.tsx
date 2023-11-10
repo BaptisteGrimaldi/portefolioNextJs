@@ -20,7 +20,7 @@ const NavBarBureau = (props: Props) => {
 
     if (props.visible) {
         return (
-            <header className="fixed left-0 top-0 z-10 h-20 w-full bg-red-600">
+            <header className="fixed left-0 top-0 z-50 h-20 w-full bg-red-600">
                 <div className="flex h-full items-center pl-5 md:hidden" onClick={() => demandeSwitchNavBar(props)}>
                     <Image src="/assetPresentation/barreMenu.webp" alt="icone Menu" width={40} height={40} />
                 </div>

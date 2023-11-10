@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const competences = () => {
     return (
-        <div className="mt-28">
+        <div className="mt-36 w-full">
             <h1 className="text-center text-lg text-red-600">Compétences</h1>
             <div className="flex flex-col">
                 <div className="flex flex-col items-center space-y-2 text-sm">
@@ -20,13 +20,13 @@ const competences = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center">
-                    <div className="absolute">
-                        <div className="absolute h-1 w-full bg-black"></div>
-                        <Image src="/assetCompetences/logoTypescript.webp" alt="Typescript" width={200} height={200} />
+                <div className="flex h-[150px] w-full flex-col items-center">
+                    <div className="absolute flex w-full justify-center">
+                        <div className="absolute top-1/2 z-0 h-1 w-full bg-black"></div>
+                        <Image src="/assetCompetences/logoTypescript.webp" alt="Typescript" width={200} height={200} className="z-10" />
                     </div>
                 </div>
-                <div className="flex flex-col items-center space-y-2 text-sm">
+                <div className="mt-8 flex flex-col items-center space-y-2 text-sm">
                     <div className="mt-8 w-min cursor-pointer whitespace-nowrap rounded bg-red-600 px-2 pb-1 pt-2 text-white hover:scale-105">
                         <p>Back-End</p>
                     </div>
