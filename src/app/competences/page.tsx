@@ -11,12 +11,17 @@ const competences = () => {
                         <p>Front-End</p>
                     </div>
                     <div className="flex flex-col space-y-6">
-                        <div className="mt-6">
-                            <Image src="/assetCompetences/logoNextJs.webp" alt="logo next js" width={200} height={200} />
+                        <div className="flex flex-col space-y-6 sm:flex-row">
+                            <div className="mt-6">
+                                <Image src="/assetCompetences/logoNextJs.webp" alt="logo next js" width={200} height={200} />
+                            </div>
+                            <div className="flex flex-col space-y-6">
+                                <Image src="/assetCompetences/logoReactJs.webp" alt="logo react" width={200} height={200} />
+                                <Image src="/assetCompetences/logoTailwind.webp" alt="logo tailwind" width={200} height={200} className="sm:hidden" />
+                            </div>
                         </div>
-                        <div className="flex flex-col space-y-6">
-                            <Image src="/assetCompetences/logoReactJs.webp" alt="logo react" width={200} height={200} />
-                            <Image src="/assetCompetences/logoTailwind.webp" alt="logo tailwind" width={200} height={200} />
+                        <div className="flex justify-center">
+                            <Image src="/assetCompetences/logoTailwind.webp" alt="logo tailwind" width={200} height={88} className="hidden sm:block" />
                         </div>
                     </div>
                 </div>
