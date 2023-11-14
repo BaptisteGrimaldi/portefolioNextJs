@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 const Presentation = () => {
     const temoignages = [
         Temoignage({
-            citation: "'Je suis content du travail qu'a réalisé baptiste sur le développement de notre SaaS Express'",
+            citation: "'Je suis content du travail qu'a réalisé Baptiste sur le développement de notre SaaS Express'",
             image: '/assetPresentation/thomasMillet.webp',
             nom: 'Thomas Millet',
             poste: 'Product Owner',
@@ -100,7 +100,7 @@ const Presentation = () => {
                     <div
                         className="mb-5 mt-3 flex w-full items-center justify-center space-x-3"
                         onClick={() => {
-                            downloadFile('cvBaptisteGrimaldi.pdf');
+                            downloadFile('/assetPresentation/cvBaptisteGrimaldi.pdf');
                         }}
                     >
                         <Image src={'/assetPresentation/iconeTelechargement.webp'} alt="iconeDownload" width={20} height={20} className="cursor-pointer hover:scale-105" />
