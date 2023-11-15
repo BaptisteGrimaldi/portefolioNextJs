@@ -11,6 +11,7 @@
         "tailwind": "eslint ./src/**/*.{js,jsx,ts,tsx} --fix"
     },
     "dependencies": {
+        "@lottiefiles/react-lottie-player": "^3.5.3",
         "@react-hook/window-size": "^3.1.1",
         "eslint-config-prettier": "^9.0.0",
         "eslint-config-standard": "^17.1.0",

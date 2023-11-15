@@ -64,7 +64,7 @@ const Presentation = () => {
                             Êtes-vous prêt à transformer ce <span className="text-textRed">cauchemar</span> en une <span className="text-cyan">success story</span> ? Ne laissez pas votre projet web se perdre dans <span className="font-robotoBold">l&apos;obscurité</span> !
                         </p>
                     </div>
-                    <div className="boutonCyanCss">
+                    <div className="boutonCyanCss cursor-pointer hover:scale-105">
                         <p>Contactez-moi !</p>
                     </div>
                 </div>
