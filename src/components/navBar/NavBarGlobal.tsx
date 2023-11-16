@@ -1,5 +1,4 @@
 'use client';
-
 import NavBarBureau from './NavBarBureau';
 import NavBarPhone from './NavBarPhone';
 import { useState } from 'react';

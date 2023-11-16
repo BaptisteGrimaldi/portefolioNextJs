@@ -1,5 +1,3 @@
-'use client';
-
 import Presentation from './presentation/page';
 
 const Home = () => {

@@ -1,7 +1,8 @@
-'use client';
 import React from 'react';
 import Image from 'next/image';
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import AnimationsCompetences from '@/components/competences/animations/AnimationsCompetences';
+import AnimationBackEnd from '@/components/competences/animations/AnimationBackEnd';
+import AnimationFrontEnd from '@/components/competences/animations/AnimationFrontEnd';
 const Competences = () => {
     return (
         <div className="mb-10 mt-36 w-full">
@@ -26,9 +27,7 @@ const Competences = () => {
                         </div>
                     </div>
 
-                    {/* <Player autoplay loop src="https://lottie.host/17cc3293-f4c3-4fd8-bff7-747e382d7150/wc60vtAiOa.json" style={{ height: '300px', width: '300px', marginTop: '0px' }}>
-                        <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-                    </Player> */}
+                    <AnimationFrontEnd />
                 </div>
                 <div className="mt-16 flex h-[150px] w-full flex-col items-center xl:w-1/12">
                     <div className="absolute flex w-full justify-center">
@@ -49,19 +48,10 @@ const Competences = () => {
                             <Image src="/assetCompetences/logoMysql.webp" alt="logo mysql" width={200} height={200} className="sm:pb-12" />
                         </div>
                     </div>
-                    {/* <Player autoplay loop src="https://lottie.host/21f88dd6-3133-4420-8dfb-7a4c98ab4017/WRlVyDN3w6.json" style={{ height: '300px', width: '300px' }}>
-                        <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-                    </Player> */}
+                    <AnimationBackEnd />
                 </div>
             </div>
-            <div className="mx-auto flex w-full max-w-[1000px] items-center justify-between">
-                <Player autoplay loop src="https://lottie.host/17cc3293-f4c3-4fd8-bff7-747e382d7150/wc60vtAiOa.json" style={{ height: '300px', width: '300px', marginTop: '0px' }}>
-                    <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-                </Player>
-                <Player autoplay loop src="https://lottie.host/21f88dd6-3133-4420-8dfb-7a4c98ab4017/WRlVyDN3w6.json" style={{ height: '300px', width: '300px' }}>
-                    <Controls visible={false} buttons={['play', 'repeat', 'frame', 'debug']} />
-                </Player>
-            </div>
+            <AnimationsCompetences />
         </div>
     );
 };
