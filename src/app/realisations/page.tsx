@@ -8,14 +8,14 @@ const Realisation = () => {
             nomProjet: 'Plateforme recrutement SAP',
             description: 'Réalisation d\'une plateforme de recherche de candidat specialisé sur SAP pour une entreprise de recrutement.',
             enLigne: true,
-            tagsTechnologie: ['Html','Css','Javascript','Node Js','MySql','MongoDB'],
+            tagsTechnologie: ['Html','Css','Javascript','NodeJs','MySql','MongoDB'],
             videoPresentation: 'https://www.youtube.com/embed/9WbCfHutDSE',
         }),
         ProjetCard({
             nomProjet: 'Algorithme de trading',
             description: 'Réalisation d\'un algorithme d\'analyse de trading sur le NASDAQ.',
             enLigne: false,
-            tagsTechnologie: ['Node JS','typescript'],
+            tagsTechnologie: ['NodeJS','typescript'],
             videoPresentation: 'https://www.youtube.com/embed/9WbCfHutDSE',
         }),
         ProjetCard({
