@@ -51,7 +51,7 @@ const NavBarBureau = (props: Props) => {
                                     <Link href="./competences">Compétences</Link>
                                 </p>
                             </div>
-                            <div className={` ${activeTab === '/realisation' ? 'border-b-2 border-solid border-teal-500' : ''} mt-1`} onClick={() => handleTabClick('/realisations')}>
+                            <div className={` ${activeTab === '/realisations' ? 'border-b-2 border-solid border-teal-500' : ''} mt-1`} onClick={() => handleTabClick('/realisations')}>
                                 <p className="cursor-pointer hover:scale-105 hover:opacity-50">
                                     <Link href="./realisations">Réalisations</Link>
                                 </p>

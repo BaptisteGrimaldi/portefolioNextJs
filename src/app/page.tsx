@@ -1,7 +1,7 @@
 import Presentation from './presentation/page';
 
 const Home = () => {
-    return <Presentation />;
+    return         <Presentation />;
 };
 
 export default Home;
