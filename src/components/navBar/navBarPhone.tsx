@@ -35,7 +35,9 @@ const NavBarPhone = (props: Props) => {
                                 </p>
                             </div>
                             <div className="w-32 cursor-pointer rounded bg-red-700 px-2 pb-1 pt-2 text-white hover:scale-105">
-                                <p className="cursor-pointer hover:scale-105 hover:opacity-50">Réalisations</p>
+                                <p className="cursor-pointer hover:scale-105 hover:opacity-50">
+                                    <Link href="./realisations">Réalisations</Link>
+                                </p>
                             </div>
                             <div className="w-32 cursor-pointer rounded bg-red-700 px-2 pb-1 pt-2 text-white hover:scale-105">
                                 <p className="cursor-pointer hover:scale-105 hover:opacity-50">Services</p>
