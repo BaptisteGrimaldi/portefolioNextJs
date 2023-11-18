@@ -6,7 +6,7 @@ const Realisation = () => {
     const projets: ReactElement[] = [
         ProjetCard({
             nomProjet: 'Plateforme recrutement SAP',
-            description: 'Réalisation d\'une plateforme de recherche de candidat specialisé sur SAP pour une entreprise de recrutement.',
+            description: 'Réalisation d\'une plateforme de recherche de candidats specialisés sur SAP pour un cabinet de chasse.',
             enLigne: true,
             tagsTechnologie: ['Html','Css','Javascript','NodeJs','MySql','MongoDB'],
             videoPresentation: 'https://www.youtube.com/embed/9WbCfHutDSE',
