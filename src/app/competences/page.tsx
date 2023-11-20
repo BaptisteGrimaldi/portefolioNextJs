@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import AnimationsCompetences from '@/components/competences/animations/AnimationsCompetences';
+import AnimationsCompetences from '@/components/competences/AnimationsCompetences';
 import AnimationBackEnd from '@/components/competences/animations/AnimationBackEnd';
 import AnimationFrontEnd from '@/components/competences/animations/AnimationFrontEnd';
 const Competences = () => {

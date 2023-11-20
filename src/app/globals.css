@@ -32,3 +32,15 @@ p {
     width: min-content;
     min-height: min-content;
 }
+
+/* Par défaut, la taille du texte est small (sm) */
+.text {
+    font-size: 14px; /* Tailwind's sm:text-base corresponds to 14px */
+}
+
+/* Pour les écrans de taille moyenne (md) et plus grands */
+@media (min-width: 768px) {
+    .text {
+        font-size: 16px; /* Tailwind's md:text-lg corresponds to 16px */
+    }
+}

@@ -1,4 +1,3 @@
-
 type ProjetCardProps = {
     nomProjet: string;
     description: string;
@@ -9,21 +8,22 @@ type ProjetCardProps = {
 
 const ProjetCard = ({ nomProjet, description, enLigne, tagsTechnologie, videoPresentation }: ProjetCardProps) => {
     return (
-        <div  className="mt-5 flex flex-col">
-            <h1 className="w-full text-center">{nomProjet}</h1>
-            <p>{description}</p>
+        <div className="text mt-5 flex w-full flex-col">
+            <h1 className="w-full text-red-600">{nomProjet}</h1>
+            <p className="mt-4">{description}</p>
             <div>
                 <p className={` ${enLigne === true ? 'block' : 'hidden'} `}>Voir le site</p>
-                <div className="flex">
+                <div className="mt-7 w-full flex-col space-y-7">
                     {tagsTechnologie.map((tech, index) => (
-                        <p key={index}>{tech}</p>
+                        <p key={index} className="w-min rounded bg-teal-500 px-2 pb-1 pt-2 text-white">
+                            {tech}
+                        </p>
                     ))}
                 </div>
             </div>
-            <iframe className="sm:w-[400px]" width="250" height="250" src={videoPresentation} title="Test youtube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe className="mt-7 sm:w-[400px]" width="250" height="250" src={videoPresentation} title="Test youtube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </div>
     );
 };
 
 export default ProjetCard;
-

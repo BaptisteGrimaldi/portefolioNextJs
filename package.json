@@ -8,7 +8,7 @@
         "start": "next start",
         "lint": "next lint",
         "prettier": "prettier --write ./src/**/*",
-        "tailwind": "eslint ./src/**/*.{js,jsx,ts,tsx} --fix"
+        "eslint": "eslint ./src/**/*.{js,jsx,ts,tsx} --fix"
     },
     "dependencies": {
         "@lottiefiles/react-lottie-player": "^3.5.3",
@@ -17,18 +17,20 @@
         "eslint-config-standard": "^17.1.0",
         "eslint-plugin-tailwindcss": "^3.13.0",
         "next": "13.5.4",
-        "react": "^18",
-        "react-dom": "^18"
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scroll": "^1.9.0"
     },
     "devDependencies": {
         "@types/node": "^20",
         "@types/react": "^18",
         "@types/react-dom": "^18",
+        "@types/react-scroll": "^1.8.10",
         "autoprefixer": "^10",
         "eslint": "^8",
         "eslint-config-next": "13.5.4",
         "postcss": "^8",
-        "prettier": "^3.0.3",
+        "prettier": "^3.1.0",
         "tailwindcss": "^3",
         "typescript": "^5"
     }
