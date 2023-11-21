@@ -16,6 +16,9 @@ const config: Config = {
                 roboto: ['Roboto Serif', 'serif'],
                 robotoBold: ['Roboto Bold', 'serif'],
             },
+            backgroundImage: {
+                'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
+              },
         },
     },
     plugins: [],

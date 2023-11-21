@@ -29,7 +29,7 @@ const Realisation = () => {
     return (
         <div className="mt-36 w-full">
             <h1 className="text-center text-lg  text-red-600 xl:text-xl">Réalisations</h1>
-            <div className="mx-auto">
+            <div className="mx-auto w-10/12">
                 <div className="mt-5 flex flex-col space-y-2 whitespace-nowrap border p-2 text-center">
                     {projets.map((projet, index) => (
                         <p
