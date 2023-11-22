@@ -34,13 +34,25 @@ p {
 }
 
 /* Par défaut, la taille du texte est small (sm) */
-.text {
+.textP {
     font-size: 14px; /* Tailwind's sm:text-base corresponds to 14px */
 }
 
 /* Pour les écrans de taille moyenne (md) et plus grands */
 @media (min-width: 768px) {
-    .text {
+    .textP {
         font-size: 16px; /* Tailwind's md:text-lg corresponds to 16px */
+    }
+}
+.textH1 {
+    font-size: 1.125rem/* 18px */;
+    line-height: 1.75rem/* 28px */;
+}
+
+/* Pour les écrans de taille moyenne (md) et plus grands */
+@media (min-width: 768px) {
+    .textH1 {
+        font-size: 1.5rem/* 24px */;
+        line-height: 2rem/* 32px */;
     }
 }

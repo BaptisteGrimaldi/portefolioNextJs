@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { demandeSwitchNavBar } from '@/components/navBar/function/demandeSwitchNavBar';
-import { usePathname } from 'next/navigation';
+import { usePathname , useRouter} from 'next/navigation';
 
 type Props = {
     visible: boolean;
@@ -11,11 +11,13 @@ type Props = {
 
 const NavBarBureau = (props: Props) => {
     const pathname = usePathname();
+    const router = useRouter();
 
     const [activeTab, setActiveTab] = useState(pathname);
 
     function handleTabClick(tab: string) {
         setActiveTab(tab);
+        router.push(`http://localhost:3000/${tab}`);
     }
 
     if (props.visible) {

@@ -1,9 +1,11 @@
-'use client';
 import ProjetCard from '@/components/realisations/ProjetCard';
 import React from 'react';
+import MenuProjet from '@/components/realisations/MenuProjet';
+import { TProjet } from '@/type';
+
 
 const Realisation = () => {
-    const projets = [
+    const projets:TProjet[] = [
         {
             nomProjet: 'Plateforme recrutement SAP',
             description: "Réalisation d'une plateforme de recherche de candidats specialisés sur SAP pour un cabinet de chasse.",
@@ -30,26 +32,7 @@ const Realisation = () => {
         <div className="mt-36 w-full">
             <h1 className="text-center text-lg  text-red-600 xl:text-xl">Réalisations</h1>
             <div className="mx-auto w-10/12">
-                <div className="mt-5 flex flex-col space-y-2 whitespace-nowrap border p-2 text-center">
-                    {projets.map((projet, index) => (
-                        <p
-                            key={index}
-                            className="cursor-pointer"
-                            onClick={() => {
-                                const idProjetElement = document.getElementById(projet.nomProjet);
-                                if (idProjetElement) {
-                                    const rect = idProjetElement.getBoundingClientRect();
-                                    window.scrollTo({
-                                        top: rect.top + window.pageYOffset + -100,
-                                        behavior: 'smooth',
-                                    });
-                                }
-                            }}
-                        >
-                            {projet.nomProjet}
-                        </p>
-                    ))}
-                </div>
+                <MenuProjet projets={projets} />
                 <div className="">
                     {projets.map((projet, index) => (
                         <div id={projet.nomProjet} key={index}>
@@ -63,3 +46,5 @@ const Realisation = () => {
 };
 
 export default Realisation;
+
+

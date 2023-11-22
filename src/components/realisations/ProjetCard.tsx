@@ -8,11 +8,11 @@ type ProjetCardProps = {
 
 const ProjetCard = ({ nomProjet, description, enLigne, tagsTechnologie, videoPresentation }: ProjetCardProps) => {
     return (
-        <div className="text mt-5 flex w-full flex-col">
-            <h1 className="w-full text-center text-red-600">{nomProjet}</h1>
+        <div className="textP mt-5 flex w-full flex-col">
+            <h1 className="textH1 w-full text-center text-red-600">{nomProjet}</h1>
             <p className="mt-4 text-justify">{description}</p>
 
-            <div className={`${enLigne === true ? 'block' : 'hidden'} flex w-24 flex-col items-center`}>
+            <div className={`${enLigne === true ? 'block' : 'hidden'} mx-auto flex w-24 flex-col items-center`}>
                 <p className={` ${enLigne === true ? 'block' : 'hidden'} mt-4 w-min whitespace-nowrap `}>Voir le site</p>
                 <div className={`${enLigne === true ? 'block' : 'hidden'} h-1 w-24 whitespace-nowrap bg-gradient-to-r from-textRed to-cyan `}></div>
             </div>
