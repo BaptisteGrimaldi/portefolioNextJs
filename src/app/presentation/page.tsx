@@ -86,7 +86,7 @@ const Presentation = () => {
 
             <div className="absolute left-1/2 h-[326px] w-10/12 max-w-5xl -translate-x-1/2">
                 <Image src={'/assetPresentation/flecheDroiteBlanche.webp'} alt="Fleche Droite blanche" width={70} height={70} className="absolute right-0 top-1/2 -translate-y-1/2 max-[320px]:scale-75" onClick={suivant} />
-                <Image src={'/assetPresentation/flecheDroiteBlanche.webp'} alt="Fleche Gauche blanche" width={70} height={70} className="absolute left-0 top-1/2 -translate-y-1/2 rotate-180 max-[320px]:scale-75" onClick={precedent} />
+                <Image src={'/assetPresentation/flecheDroiteBlanche.webp'} alt="Fleche Gauche blanche" width={70} height={70} className="absolute left-0 top-[50.5%] -translate-y-1/2 rotate-180 max-[320px]:scale-75" onClick={precedent} />
                 {temoignage}
             </div>
 
