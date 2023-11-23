@@ -48,7 +48,7 @@ const Presentation = () => {
                     <Image src="/assetPresentation/moiMidJourney.webp" alt="avatarMidjourney" width={500} height={500} />
                 </div>
 
-                <div className="flex w-10/12 flex-col items-center justify-center text-justify text-sm md:text-lg xl:w-6/12">
+                <div className="textP flex w-10/12 flex-col items-center justify-center text-justify xl:w-6/12">
                     <div className="flex h-3/5 w-10/12 flex-col justify-between ">
                         <p>
                             Bonjour je m&apos;appelle <span className="text-cyan">Baptiste Grimaldi</span>, je suis un développeur full stack autodidacte avec une préférence pour le backend.{' '}
@@ -85,8 +85,8 @@ const Presentation = () => {
             <h1 className="mb-5 text-center text-lg text-textRed md:text-2xl">Témoignages</h1>
 
             <div className="absolute left-1/2 h-[326px] w-10/12 max-w-5xl -translate-x-1/2">
-                <Image src={'/assetPresentation/flecheDroiteBlanche.webp'} alt="Fleche Droite blanche" width={70} height={70} className="flecheBlancheDroite absolute right-2 top-1/2 -translate-y-1/2" onClick={suivant} />
-                <Image src={'/assetPresentation/flecheDroiteBlanche.webp'} alt="Fleche Gauche blanche" width={70} height={70} className="flecheBlancheGauche absolute left-2 top-1/2 -translate-y-1/2 rotate-180" onClick={precedent} />
+                <Image src={'/assetPresentation/flecheDroiteBlanche.webp'} alt="Fleche Droite blanche" width={70} height={70} className="absolute right-0 top-1/2 -translate-y-1/2 max-[320px]:scale-75" onClick={suivant} />
+                <Image src={'/assetPresentation/flecheDroiteBlanche.webp'} alt="Fleche Gauche blanche" width={70} height={70} className="absolute left-0 top-1/2 -translate-y-1/2 rotate-180 max-[320px]:scale-75" onClick={precedent} />
                 {temoignage}
             </div>
 

@@ -6,7 +6,6 @@ import AnimationFrontEnd from '@/components/competences/animations/AnimationFron
 const Competences = () => {
     return (
         <div className="mb-10 mt-36 w-full">
-            <h1 className="text-center text-lg text-red-600 xl:text-xl">Compétences</h1>
             <div className="mx-auto flex max-w-[1400px] flex-col items-center xl:mt-10 xl:flex-row xl:justify-center">
                 <div className="flex flex-col items-center space-y-2 text-sm xl:w-5/12">
                     <div className="boutonCyanCss">

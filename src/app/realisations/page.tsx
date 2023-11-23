@@ -3,9 +3,8 @@ import React from 'react';
 import MenuProjet from '@/components/realisations/MenuProjet';
 import { TProjet } from '@/type';
 
-
 const Realisation = () => {
-    const projets:TProjet[] = [
+    const projets: TProjet[] = [
         {
             nomProjet: 'Plateforme recrutement SAP',
             description: "Réalisation d'une plateforme de recherche de candidats specialisés sur SAP pour un cabinet de chasse.",
@@ -30,7 +29,6 @@ const Realisation = () => {
     ];
     return (
         <div className="mt-36 w-full">
-            <h1 className="text-center text-lg  text-red-600 xl:text-xl">Réalisations</h1>
             <div className="mx-auto w-10/12">
                 <MenuProjet projets={projets} />
                 <div className="">
@@ -46,5 +44,3 @@ const Realisation = () => {
 };
 
 export default Realisation;
-
-

@@ -34,7 +34,7 @@ const NavBarPhone = (props: Props) => {
                                     <Link href="./competences">Compétences</Link>
                                 </p>
                             </div>
-                            <div className="w-32 cursor-pointer rounded bg-red-700 px-2 pb-1 pt-2 text-white hover:scale-105">
+                            <div className="w-32 cursor-pointer rounded bg-red-700 px-2 pb-1 pt-2 text-white hover:scale-105" onClick={() => demandeSwitchNavBar(props)}>
                                 <p className="cursor-pointer hover:scale-105 hover:opacity-50">
                                     <Link href="./realisations">Réalisations</Link>
                                 </p>

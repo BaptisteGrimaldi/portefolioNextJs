@@ -4,4 +4,4 @@ export type TProjet = {
     enLigne: boolean;
     tagsTechnologie: string[];
     videoPresentation: string;
-}
+};
