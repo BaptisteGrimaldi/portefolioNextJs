@@ -1,7 +1,7 @@
 export type TProjet = {
     nomProjet: string;
     description: string;
-    enLigne: boolean;
+    enLigne: string;
     tagsTechnologie: string[];
     videoPresentation: string;
 };

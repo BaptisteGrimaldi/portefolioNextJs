@@ -1,20 +1,19 @@
-type ProjetCardProps = {
-    nomProjet: string;
-    description: string;
-    enLigne: boolean;
-    tagsTechnologie: string[];
-    videoPresentation: string;
-};
+import { TProjet } from '@/type';
+// import Link from "next/link";
 
-const ProjetCard = ({ nomProjet, description, enLigne, tagsTechnologie, videoPresentation }: ProjetCardProps) => {
+const ProjetCard = ({ nomProjet, description, enLigne, tagsTechnologie, videoPresentation }: TProjet) => {
     return (
         <div className="textP mt-5 flex w-full flex-col">
             <h1 className="textH1 w-full text-center text-red-600">{nomProjet}</h1>
             <p className="mt-4 text-justify">{description}</p>
 
-            <div className={`${enLigne === true ? 'block' : 'hidden'} mx-auto flex w-24 flex-col items-center`}>
-                <p className={` ${enLigne === true ? 'block' : 'hidden'} mt-4 w-min whitespace-nowrap `}>Voir le site</p>
-                <div className={`${enLigne === true ? 'block' : 'hidden'} h-1 w-24 whitespace-nowrap bg-gradient-to-r from-textRed to-cyan `}></div>
+            <div className={`${enLigne !== '' ? 'block' : 'hidden'} mx-auto flex w-24 flex-col items-center`}>
+                <p className={` ${enLigne !== '' ? 'block' : 'hidden'} mt-4 w-min whitespace-nowrap `}>
+                    <a href={`${enLigne}`} target="_blank" rel="noopener noreferrer">
+                        Voir le site
+                    </a>
+                </p>
+                <div className={`${enLigne !== '' ? 'block' : 'hidden'} h-1 w-24 whitespace-nowrap bg-gradient-to-r from-textRed to-cyan `}></div>
             </div>
             <div className="mt-5 flex w-full flex-row flex-wrap ">
                 {tagsTechnologie.map((tech, index) => (
