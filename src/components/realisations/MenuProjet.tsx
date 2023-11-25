@@ -3,7 +3,7 @@ import React from 'react';
 import { TProjet } from '@/type';
 const MenuProjet = ({ projets }: { projets: TProjet[] }) => {
     return (
-        <div className="textP mx-auto mt-5 flex max-w-[350px] flex-col items-center justify-center space-y-2 whitespace-nowrap border p-2 text-center">
+        <div className="textP mt-5 flex max-h-[150px] max-w-[300px] flex-col items-center justify-center space-y-2 whitespace-nowrap border p-2 text-center md:ml-10">
             {projets.map((projet: TProjet, index: number) => (
                 <p
                     key={index}
