@@ -22,7 +22,7 @@ const ProjetCard = ({ nomProjet, description, enLigne, tagsTechnologie, videoPre
                     </p>
                 ))}
             </div>
-            <div className='flex justify-center'>
+            <div className="flex justify-center">
                 <iframe className="mt-7 sm:w-[400px]" width="250" height="250" src={videoPresentation} title="Test youtube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
         </div>
