@@ -1,8 +1,14 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { TProjet } from '@/type';
-const MenuProjet = ({ projets }: { projets: TProjet[] }) => {
+const MenuProjet = ({ projets ,indexProjet,onChangeIndex}: { projets: TProjet[] ,indexProjet:number , onChangeIndex:(a:number)=>void}) => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    const [indexFinal, setIndexFinal] = useState(10)
+
+    useEffect(()=>{
+        onChangeIndex(indexFinal);
+    },[indexFinal])
 
     useEffect(() => {
         if (window.innerWidth < 768) {
@@ -30,7 +36,7 @@ const MenuProjet = ({ projets }: { projets: TProjet[] }) => {
                 <p
                     key={index}
                     className="cursor-pointer"
-                    onClick={() => {
+                    onClick={(e) => {
                         const idProjetElement = document.getElementById(projet.nomProjet);
                         if (idProjetElement && isSmallScreen) {
                             const rect = idProjetElement.getBoundingClientRect();
@@ -41,8 +47,11 @@ const MenuProjet = ({ projets }: { projets: TProjet[] }) => {
                         }
 
                         if(isSmallScreen === false){
-                            console.log("lol")
-                            // c'est sa a continuer le comportement est le bon 
+                            const projetSelectionner = e.target as HTMLElement
+                            const valueProjetSelectionner = projetSelectionner.textContent;
+                            const indexProjet = projets.findIndex((projet) => projet.nomProjet === valueProjetSelectionner);
+                            setIndexFinal(indexProjet)
+                            console.log(indexProjet)
                         }
                     }}
                 >
