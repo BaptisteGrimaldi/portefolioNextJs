@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import url('../styles/presentation/flecheBlanche.css');
+@import url('../styles/realisation/gradientBorder.css');
 
 @font-face {
     font-family: 'Roboto Serif';
@@ -33,15 +34,13 @@ p {
     min-height: min-content;
 }
 
-/* Par défaut, la taille du texte est small (sm) */
 .textP {
-    font-size: 14px; /* Tailwind's sm:text-base corresponds to 14px */
+    font-size: 14px;
 }
 
-/* Pour les écrans de taille moyenne (md) et plus grands */
 @media (min-width: 768px) {
     .textP {
-        font-size: 16px; /* Tailwind's md:text-lg corresponds to 16px */
+        font-size: 16px;
     }
 }
 .textH1 {
@@ -49,7 +48,6 @@ p {
     line-height: 1.75rem /* 28px */;
 }
 
-/* Pour les écrans de taille moyenne (md) et plus grands */
 @media (min-width: 768px) {
     .textH1 {
         font-size: 1.25rem; /* 20px */

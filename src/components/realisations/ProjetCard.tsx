@@ -1,20 +1,28 @@
 import { TProjet } from '@/type';
-// import Link from "next/link";
+import Image from 'next/image';
 
-const ProjetCard = ({ nomProjet, description, enLigne, tagsTechnologie, videoPresentation }: TProjet) => {
+const ProjetCard = ({ nomProjet, description, enLigne, lienRepo, tagsTechnologie, videoPresentation }: TProjet) => {
     return (
         <div className="textP mt-5 flex flex-col">
             <h1 className="textH1 w-full text-center text-red-600">{nomProjet}</h1>
             <p className="mx-auto mt-4 max-w-[450px] text-justify">{description}</p>
 
-            <div className={`${enLigne !== '' ? 'block' : 'hidden'} mx-auto flex w-24 flex-col items-center`}>
-                <p className={` ${enLigne !== '' ? 'block' : 'hidden'} mt-4 w-min whitespace-nowrap `}>
-                    <a href={`${enLigne}`} target="_blank" rel="noopener noreferrer">
-                        Voir le site
+            <div className="mt-4 flex justify-center">
+                <div className={`${enLigne !== '' ? 'block' : 'hidden'} flex w-24 flex-col items-center`}>
+                    <p className={` ${enLigne !== '' ? 'block' : 'hidden'} mt-4 w-min whitespace-nowrap `}>
+                        <a href={`${enLigne}`} target="_blank" rel="noopener noreferrer">
+                            Voir le site
+                        </a>
+                    </p>
+                    <div className={`${enLigne !== '' ? 'block' : 'hidden'} h-1 w-24 whitespace-nowrap bg-gradient-to-r from-textRed to-cyan `}></div>
+                </div>
+                <div className={`${lienRepo !== '' ? 'block' : 'hidden'} flex w-24 justify-center`}>
+                    <a href={`${lienRepo}`} target="_blank" rel="noopener noreferrer">
+                        <Image src="/assetRealisations/logoGithub.webp" alt="github logo" width={80} height={60} />
                     </a>
-                </p>
-                <div className={`${enLigne !== '' ? 'block' : 'hidden'} h-1 w-24 whitespace-nowrap bg-gradient-to-r from-textRed to-cyan `}></div>
+                </div>
             </div>
+
             <div className="mt-5 flex w-full flex-row flex-wrap justify-center ">
                 {tagsTechnologie.map((tech, index) => (
                     <p key={index} className="mr-5 mt-3 rounded bg-teal-500 px-2 pb-1 pt-2 text-white">

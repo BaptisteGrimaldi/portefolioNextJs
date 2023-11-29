@@ -1,14 +1,14 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import { TProjet } from '@/type';
-const MenuProjet = ({ projets ,indexProjet,onChangeIndex}: { projets: TProjet[] ,indexProjet:number , onChangeIndex:(a:number)=>void}) => {
+const MenuProjet = ({ projets, indexProjet, onChangeIndex }: { projets: TProjet[]; indexProjet: number; onChangeIndex: (a: number) => void }) => {
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-    const [indexFinal, setIndexFinal] = useState(10)
+    const [indexFinal, setIndexFinal] = useState(0);
 
-    useEffect(()=>{
+    useEffect(() => {
         onChangeIndex(indexFinal);
-    },[indexFinal])
+    }, [indexFinal, onChangeIndex]);
 
     useEffect(() => {
         if (window.innerWidth < 768) {
@@ -26,12 +26,12 @@ const MenuProjet = ({ projets ,indexProjet,onChangeIndex}: { projets: TProjet[] 
         });
     }, []);
 
-    useEffect(() => {
-        console.log('log de fin', isSmallScreen);
-    }, [isSmallScreen]);
-
     return (
-        <div className="textP mt-5 flex max-h-[150px] max-w-[300px] flex-col items-center justify-center space-y-2 whitespace-nowrap border p-2 text-center md:ml-10">
+        <div className="textP relative mt-5 flex max-h-[150px] w-[300px]  max-w-[500px] flex-col items-center justify-center space-y-2 whitespace-nowrap border-hidden p-2 text-center md:ml-10">
+            <div className='absolute top-0 mx-auto h-1 w-[250px] border-hidden md:w-[300px]'>
+                <div className="gradient-border-t"></div>
+                <div className="gradient-border-l"></div>
+            </div>
             {projets.map((projet: TProjet, index: number) => (
                 <p
                     key={index}
@@ -46,12 +46,11 @@ const MenuProjet = ({ projets ,indexProjet,onChangeIndex}: { projets: TProjet[] 
                             });
                         }
 
-                        if(isSmallScreen === false){
-                            const projetSelectionner = e.target as HTMLElement
+                        if (isSmallScreen === false) {
+                            const projetSelectionner = e.target as HTMLElement;
                             const valueProjetSelectionner = projetSelectionner.textContent;
                             const indexProjet = projets.findIndex((projet) => projet.nomProjet === valueProjetSelectionner);
-                            setIndexFinal(indexProjet)
-                            console.log(indexProjet)
+                            setIndexFinal(indexProjet);
                         }
                     }}
                 >

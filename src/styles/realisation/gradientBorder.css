@@ -1,0 +1,43 @@
+.gradient-border-t::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 2px;
+    background: linear-gradient(to right, #dc0b0b, #12caca);
+}
+.gradient-border-l::before {
+    content: '';
+    position: absolute;
+    left: -50px;
+    top: 50px;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(to right, #dc0b0b, #12caca);
+    transform: rotate(90deg);
+}
+
+@media (min-width: 768px) {
+    .gradient-border-t::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 2px;
+        background: linear-gradient(to right, #dc0b0b, #12caca);
+    }
+    .gradient-border-l::before {
+        content: '';
+        position: absolute;
+        left: -60px;
+        top: 60px;
+        width: 120.8px;
+        height: 2px;
+        background: linear-gradient(to right, #dc0b0b, #12caca);
+        transform: rotate(90deg);
+    }
+}
+
+
