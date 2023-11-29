@@ -18,7 +18,7 @@ const Presentation = () => {
             image: '/assetPresentation/moiMidJourney.webp',
             nom: 'Votre serviteur',
             poste: 'Developpeur Web',
-            entreprise: 'Moi-meme',
+            entreprise: 'Freelance',
         }),
     ];
 
