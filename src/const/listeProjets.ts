@@ -8,6 +8,7 @@ export const listeProjets: TProjet[] = [
         lienRepo: 'https://github.com/BaptisteGrimaldi/Site-daron',
         tagsTechnologie: ['Html', 'Css', 'Javascript', 'NodeJs', 'MySql', 'MongoDB'],
         videoPresentation: 'https://www.youtube.com/embed/9WbCfHutDSE',
+        date: '2022',
     },
     {
         nomProjet: 'Algorithme de trading',
@@ -16,6 +17,7 @@ export const listeProjets: TProjet[] = [
         lienRepo: '',
         tagsTechnologie: ['NodeJS', 'Typescript'],
         videoPresentation: 'https://www.youtube.com/embed/9WbCfHutDSE',
+        date: '2023',
     },
     {
         nomProjet: 'Portefolio Personnel',
@@ -24,5 +26,6 @@ export const listeProjets: TProjet[] = [
         lienRepo: '',
         tagsTechnologie: ['Next JS', 'Tailwind CSS', 'Typescript'],
         videoPresentation: 'https://www.youtube.com/embed/9WbCfHutDSE',
+        date: '2023',
     },
 ];

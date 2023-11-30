@@ -5,4 +5,5 @@ export type TProjet = {
     lienRepo: string;
     tagsTechnologie: string[];
     videoPresentation: string;
+    date: string;
 };

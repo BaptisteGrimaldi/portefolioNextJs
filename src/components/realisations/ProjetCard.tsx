@@ -1,7 +1,7 @@
 import { TProjet } from '@/type';
 import Image from 'next/image';
 
-const ProjetCard = ({ nomProjet, description, enLigne, lienRepo, tagsTechnologie, videoPresentation }: TProjet) => {
+const ProjetCard = ({ nomProjet, description, enLigne, lienRepo, tagsTechnologie, videoPresentation, date }: TProjet) => {
     return (
         <div className="textP mt-5 flex flex-col">
             <h1 className="textH1 w-full text-center text-red-600">{nomProjet}</h1>
@@ -23,7 +23,7 @@ const ProjetCard = ({ nomProjet, description, enLigne, lienRepo, tagsTechnologie
                 </div>
             </div>
 
-            <div className="mt-5 flex w-full flex-row flex-wrap justify-center ">
+            <div className="mt-5 flex w-full max-w-[450px] flex-row flex-wrap justify-center">
                 {tagsTechnologie.map((tech, index) => (
                     <p key={index} className="mr-5 mt-3 rounded bg-teal-500 px-2 pb-1 pt-2 text-white">
                         {tech}
@@ -33,6 +33,7 @@ const ProjetCard = ({ nomProjet, description, enLigne, lienRepo, tagsTechnologie
             <div className="flex justify-center">
                 <iframe className="mt-7 sm:w-[400px]" width="250" height="250" src={videoPresentation} title="Test youtube" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
             </div>
+            <p className="mt-5 text-center">Fait en : {date}</p>
         </div>
     );
 };
