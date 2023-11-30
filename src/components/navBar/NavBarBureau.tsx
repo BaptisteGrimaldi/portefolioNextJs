@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { demandeSwitchNavBar } from '@/components/navBar/function/demandeSwitchNavBar';
 import { usePathname, useRouter } from 'next/navigation';
 
@@ -19,6 +19,12 @@ const NavBarBureau = (props: Props) => {
         setActiveTab(tab);
         router.push(`http://localhost:3000/${tab}`);
     }
+
+    useEffect(() => {
+        if (pathname === '/contact') {
+            setActiveTab('/contact');
+        }
+    }, [pathname]);
 
     if (props.visible) {
         return (
@@ -63,8 +69,10 @@ const NavBarBureau = (props: Props) => {
                                     <Link href="./services">Services</Link>
                                 </p>
                             </div>
-                            <div className="mb-1 cursor-pointer rounded bg-teal-500 px-2 pb-1 pt-2 text-white hover:scale-105">
-                                <p>Contact</p>
+                            <div className={`${activeTab === '/contact' ? '' : ''} mb-1 cursor-pointer rounded bg-teal-500 px-2 pb-1 pt-2 text-white hover:scale-105`} onClick={() => handleTabClick('/contact')}>
+                                <p className="cursor-pointer hover:scale-105 hover:opacity-50">
+                                    <Link href="./contact">Contact</Link>
+                                </p>
                             </div>
                         </div>
                     </div>

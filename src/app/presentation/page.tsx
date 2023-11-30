@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Temoignage from '../../components/presentation/Temoignage';
 import { downloadFile } from '../../utils/downloadFile';
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Presentation = () => {
     const temoignages = [
@@ -56,12 +57,10 @@ const Presentation = () => {
                         <br />
                         <p>Je souhaite travailler avec des start-ups , des TPE ou des PME car j&apos;apprécie beaucoup la culture entrepreneuriale, qui offre un terrain propice à une prise de responsabilités et à l&apos;autonomie.</p>
                         <br />
-                        <p>
-                        Hormis cela, j&apos;aime beaucoup l&apos;économie et les marchés financiers. J&apos;apprécie également les jeux vidéo, particulièrement Civilization 6, ainsi que le jeu de cartes Magic: The Gathering.
-                        </p>
+                        <p>Hormis cela, j&apos;aime beaucoup l&apos;économie et les marchés financiers. J&apos;apprécie également les jeux vidéo, particulièrement Civilization 6, ainsi que le jeu de cartes Magic: The Gathering.</p>
                     </div>
                     <div className="boutonCyanCss cursor-pointer hover:scale-105">
-                        <p>Contactez-moi !</p>
+                        <Link href={'./contact'}>Contactez-moi !</Link>
                     </div>
                 </div>
             </div>
