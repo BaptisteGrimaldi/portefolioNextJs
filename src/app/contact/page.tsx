@@ -7,7 +7,7 @@ const Contact = () => {
             <h1 className="textH1 text-center text-red-600">Contact</h1>
             <div className="mt-14 flex justify-center space-x-32">
                 <div className="flex flex-col items-center justify-center">
-                    <a target='_blank' href='https://calendly.com/grimaldi-baptiste/prise-de-contact-client'>
+                    <a target="_blank" href="https://calendly.com/grimaldi-baptiste/prise-de-contact-client">
                         <div className="boutonCyanCss cursor-pointer hover:scale-105">
                             <p>Prendre Rendez-vous</p>
                         </div>

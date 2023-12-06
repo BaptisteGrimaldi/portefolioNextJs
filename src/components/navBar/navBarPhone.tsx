@@ -39,11 +39,13 @@ const NavBarPhone = (props: Props) => {
                                     <Link href="./realisations">Réalisations</Link>
                                 </p>
                             </div>
-                            <div className="w-32 cursor-pointer rounded bg-red-700 px-2 pb-1 pt-2 text-white hover:scale-105">
-                                <p className="cursor-pointer hover:scale-105 hover:opacity-50">Services</p>
+                            <div className="w-32 cursor-pointer rounded bg-red-700 px-2 pb-1 pt-2 text-white hover:scale-105" onClick={() => demandeSwitchNavBar(props)}>
+                                <p className="cursor-pointer hover:scale-105 hover:opacity-50">
+                                    <Link href="./services">Services</Link>
+                                </p>
                             </div>
-                            <div className="w-32 cursor-pointer rounded bg-teal-500 px-2 pb-1 pt-2 text-white hover:scale-105">
-                                <p>Contact</p>
+                            <div className="w-32 cursor-pointer rounded bg-teal-500 px-2 pb-1 pt-2 text-white hover:scale-105" onClick={() => demandeSwitchNavBar(props)}>
+                                <Link href="./contact">Contact</Link>
                             </div>
                         </div>
                     </div>
