@@ -26,6 +26,14 @@ const NavBarBureau = (props: Props) => {
         }
     }, [pathname]);
 
+    useEffect(() => {
+        function handleResize() {
+           setActiveTab(pathname)
+        }
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    });
+
     if (props.visible) {
         return (
             <header className="fixed left-0 top-0 z-50 h-20 w-full bg-red-600">
