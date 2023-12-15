@@ -70,8 +70,8 @@ const Presentation = () => {
                     className="sm:w-[400px]"
                     width="250"
                     height="250"
-                    src="https://www.youtube.com/embed/g6RPzygnhho?si=gxX1tibgrAj8Jt7u"
-                    title="Test youtube"
+                    src="https://www.youtube.com/embed/yAdnrxeNhCE?si=HQ4F12tE0Xs9mvAk"
+                    title="YouTube video fast and Curious"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen

@@ -28,7 +28,7 @@ const NavBarBureau = (props: Props) => {
 
     useEffect(() => {
         function handleResize() {
-           setActiveTab(pathname)
+            setActiveTab(pathname);
         }
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
