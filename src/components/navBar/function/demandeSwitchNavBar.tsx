@@ -1,7 +1,6 @@
-type Props = {
-    visible: boolean;
-    switchNavBar: () => void;
-};
+
+import {Props} from '../../../type'
+
 export function demandeSwitchNavBar(props: Props) {
     props.switchNavBar();
 }

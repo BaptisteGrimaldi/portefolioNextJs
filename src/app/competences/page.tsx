@@ -51,6 +51,9 @@ const Competences = () => {
                 </div>
             </div>
             <AnimationsCompetences />
+            <div className='mt-10 flex w-full justify-center'>
+                <p>Formation Suivi</p>
+            </div>
         </div>
     );
 };

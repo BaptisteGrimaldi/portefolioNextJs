@@ -7,3 +7,8 @@ export type TProjet = {
     videoPresentation: string;
     date: string;
 };
+
+export type Props = {
+    visible: boolean;
+    switchNavBar: () => void;
+};

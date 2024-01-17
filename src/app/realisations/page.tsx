@@ -38,8 +38,8 @@ const Realisation = () => {
                 </div>
                 {mobile && (
                     <div>
-                        {listeProjets.map((projet, index) => (
-                            <div id={projet.nomProjet} key={index}>
+                        {listeProjets.map((projet) => (
+                            <div id={projet.nomProjet} key={projet.nomProjet}>
                                 <ProjetCard {...projet} />
                             </div>
                         ))}

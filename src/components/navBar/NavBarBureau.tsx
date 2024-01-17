@@ -3,11 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { demandeSwitchNavBar } from '@/components/navBar/function/demandeSwitchNavBar';
 import { usePathname, useRouter } from 'next/navigation';
-
-type Props = {
-    visible: boolean;
-    switchNavBar: () => void;
-};
+import { Props } from '../../type';
 
 const NavBarBureau = (props: Props) => {
     const pathname = usePathname();

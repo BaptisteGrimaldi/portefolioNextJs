@@ -1,33 +1,19 @@
 'use client';
 import Image from 'next/image';
-import Temoignage from '../../components/presentation/Temoignage';
-import { downloadFile } from '../../utils/downloadFile';
 import React, { useState } from 'react';
 import Link from 'next/link';
 
+import { downloadFile } from '../../utils/downloadFile';
+import temoignages from '../../const/temoignage';
+
+
 const Presentation = () => {
-    const temoignages = [
-        Temoignage({
-            citation: "'Je suis content du travail qu'a réalisé Baptiste sur le développement de notre SaaS Express'",
-            image: '/assetPresentation/thomasMillet.webp',
-            nom: 'Thomas Millet',
-            poste: 'Product Owner',
-            entreprise: 'MyConnectedCompany',
-        }),
-        Temoignage({
-            citation: "'Désolé, en tant que développeur freelance junior, il m'est compliqué d'inventer 10 expériences quand on a que 22 ans. À un moment donné, il faut bien commencer quelque part !'",
-            image: '/assetPresentation/moiMidJourney.webp',
-            nom: 'Votre serviteur',
-            poste: 'Developpeur Web',
-            entreprise: 'Freelance',
-        }),
-    ];
 
     const [indexTemoignage, setIndexTemoignage] = useState(0);
     const [temoignage, setTemoignage] = useState(temoignages[indexTemoignage]);
 
     const suivant = () => {
-        setTemoignage((prevTemoignage) => {
+        setTemoignage(() => {
             const newIndex = (indexTemoignage + 1) % temoignages.length;
             setIndexTemoignage(newIndex);
             return temoignages[newIndex];
@@ -35,7 +21,7 @@ const Presentation = () => {
     };
 
     const precedent = () => {
-        setTemoignage((prevTemoignage) => {
+        setTemoignage(() => {
             const newIndex = (indexTemoignage - 1 + temoignages.length) % temoignages.length;
             setIndexTemoignage(newIndex);
             return temoignages[newIndex];
@@ -60,7 +46,7 @@ const Presentation = () => {
                         <p>Hormis cela, j&apos;aime beaucoup l&apos;économie et les marchés financiers. J&apos;apprécie également les jeux vidéo, particulièrement Civilization 6, ainsi que le jeu de cartes Magic: The Gathering.</p>
                     </div>
                     <div className="boutonCyanCss cursor-pointer hover:scale-105">
-                        <Link href={'./contact'}>Contactez-moi !</Link>
+                        <Link href={'./contact'}>Reserver un rendez-vous</Link>
                     </div>
                 </div>
             </div>
@@ -72,7 +58,6 @@ const Presentation = () => {
                     height="250"
                     src="https://www.youtube.com/embed/yAdnrxeNhCE?si=HQ4F12tE0Xs9mvAk"
                     title="YouTube video fast and Curious"
-                    frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
                 ></iframe>
@@ -92,14 +77,25 @@ const Presentation = () => {
                     <div className="w-full">
                         <p>Cv Baptiste Grimaldi</p>
                     </div>
-                    <div
-                        className="mb-5 mt-3 flex w-full items-center justify-center space-x-3"
-                        onClick={() => {
-                            downloadFile('/assetPresentation/cvBaptisteGrimaldi.pdf');
-                        }}
-                    >
-                        <Image src={'/assetPresentation/iconeTelechargement.webp'} alt="iconeDownload" width={20} height={20} className="cursor-pointer hover:scale-105" />
-                        <p className="cursor-pointer rounded bg-teal-500 px-2 pb-1 pt-2 text-white hover:scale-105">Download</p>
+                    <div className="mb-5 mt-3 flex w-full items-center justify-center space-x-3">
+                        <Image
+                            src={'/assetPresentation/iconeTelechargement.webp'}
+                            alt="iconeDownload"
+                            width={20}
+                            height={20}
+                            className="cursor-pointer hover:scale-105"
+                            onClick={() => {
+                                downloadFile('/assetPresentation/cvBaptisteGrimaldi.pdf');
+                            }}
+                        />
+                        <button
+                            className="cursor-pointer rounded bg-teal-500 px-2 pb-1 pt-2 text-white hover:scale-105"
+                            onClick={() => {
+                                downloadFile('/assetPresentation/cvBaptisteGrimaldi.pdf');
+                            }}
+                        >
+                            Download
+                        </button>
                     </div>
                 </div>
             </div>
