@@ -7,7 +7,7 @@ export const listeProjets: TProjet[] = [
         enLigne: 'https://jerecrutesursap.com/',
         lienRepo: 'https://github.com/BaptisteGrimaldi/Site-daron',
         tagsTechnologie: ['Html', 'Css', 'Javascript', 'NodeJs', 'MySql', 'MongoDB'],
-        videoPresentation: 'https://www.youtube.com/embed/9WbCfHutDSE',
+        videoPresentation: 'JAmAfTZs280',
         date: '2022',
     },
     {

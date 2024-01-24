@@ -1,5 +1,4 @@
-
-import { expect, test } from 'vitest'
+import { expect, test } from 'vitest';
 import { calculateAge } from './calculateAge';
 
 test('Fonction calculateAge', () => {
@@ -8,13 +7,13 @@ test('Fonction calculateAge', () => {
     expect(calculateAge(birthDate)).toBe(expectedAge);
 });
 
-test('Fonction calculateAge quand l\'anniversaire n\'a pas encore eu lieu cette année', () => {
+test("Fonction calculateAge quand l'anniversaire n'a pas encore eu lieu cette année", () => {
     const birthDate = new Date(new Date().getFullYear() - 20, 11, 31); // 31 décembre il y a 20 ans
     const expectedAge = 19;
     expect(calculateAge(birthDate)).toBe(expectedAge);
 });
 
-test('Fonction calculateAge quand la date de naissance est aujourd\'hui', () => {
+test("Fonction calculateAge quand la date de naissance est aujourd'hui", () => {
     const birthDate = new Date();
     const expectedAge = 0;
     expect(calculateAge(birthDate)).toBe(expectedAge);
@@ -25,11 +24,11 @@ test('Fonction calculateAge quand la date de naissance est une date future', () 
     expect(() => calculateAge(birthDate)).toThrow();
 });
 
-test('Fonction calculateAge quand la date de naissance est le 29 février d\'une année bissextile', () => {
+test("Fonction calculateAge quand la date de naissance est le 29 février d'une année bissextile", () => {
     const birthDate = new Date(2000, 1, 29); // 29 février 2000
     let expectedAge = new Date().getFullYear() - 2000;
-    if ((new Date().getMonth() < 1) || (new Date().getMonth() === 1 && new Date().getDate() < 29)) {
-        expectedAge -= 1; 
-    expect(calculateAge(birthDate)).toBe(expectedAge);
+    if (new Date().getMonth() < 1 || (new Date().getMonth() === 1 && new Date().getDate() < 29)) {
+        expectedAge -= 1;
+        expect(calculateAge(birthDate)).toBe(expectedAge);
     }
-})
+});

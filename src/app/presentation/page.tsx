@@ -6,9 +6,7 @@ import Link from 'next/link';
 import { downloadFile } from '@/utils/downloadFile';
 import temoignages from '../../const/temoignage';
 
-
 const Presentation = () => {
-
     const [indexTemoignage, setIndexTemoignage] = useState(0);
     const [temoignage, setTemoignage] = useState(temoignages[indexTemoignage]);
 
@@ -38,10 +36,13 @@ const Presentation = () => {
                 <div className="textP flex w-10/12 flex-col items-center justify-center text-justify xl:w-6/12">
                     <div className="flex h-3/5 w-10/12 flex-col justify-between ">
                         <p>
-                            Bonjour je m&apos;appelle <span className="text-cyan">Baptiste Grimaldi</span>, je suis un développeur web <span className='text-red-600'>full-stack</span> <span className='text-red-600'>autodidacte</span> avec une préférence pour le backend.
+                            Bonjour je m&apos;appelle <span className="text-cyan">Baptiste Grimaldi</span>, je suis un développeur web <span className="text-red-600">full-stack</span> <span className="text-red-600">autodidacte</span> avec une préférence pour le backend.
                         </p>
                         <br />
-                        <p>Je souhaite travailler avec des <span className='font-semibold'>start-ups</span> , des <span className='font-semibold'>TPE</span> ou des <span className='font-semibold'>PME</span>  car j&apos;apprécie beaucoup la culture entrepreneuriale, qui offre un terrain propice à une prise de responsabilités et à l&apos;autonomie.</p>
+                        <p>
+                            Je souhaite travailler avec des <span className="font-semibold">start-ups</span> , des <span className="font-semibold">TPE</span> ou des <span className="font-semibold">PME</span> car j&apos;apprécie beaucoup la culture entrepreneuriale, qui offre un terrain propice à une
+                            prise de responsabilités et à l&apos;autonomie.
+                        </p>
                         <br />
                         <p>Hormis cela, j&apos;aime beaucoup l&apos;économie et les marchés financiers. Ainsi que le jeux vidéo Civilization 6, et le jeu de cartes Magic: The Gathering.</p>
                     </div>

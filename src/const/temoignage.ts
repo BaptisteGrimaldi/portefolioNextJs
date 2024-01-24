@@ -1,5 +1,5 @@
-import Temoignage from "@/components/presentation/Temoignage";
-import { calculateAge } from "@/utils/calculateAge";
+import Temoignage from '@/components/presentation/Temoignage';
+import { calculateAge } from '@/utils/calculateAge';
 
 const age = calculateAge(new Date(2001, 11, 11));
 
