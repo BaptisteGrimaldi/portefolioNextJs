@@ -32,16 +32,16 @@ const MenuProjet = ({ projets, indexProjet, onChangeIndex }: { projets: TProjet[
                 <div className="gradient-border-t"></div>
                 <div className="gradient-border-l"></div>
             </div>
-            {projets.map((projet: TProjet, index: number) => (
-                <p
-                    key={index}
+            {projets.map((projet: TProjet) => (
+                <button
+                    key={projet.nomProjet}
                     className="cursor-pointer"
                     onClick={(e) => {
                         const idProjetElement = document.getElementById(projet.nomProjet);
                         if (idProjetElement && isSmallScreen) {
                             const rect = idProjetElement.getBoundingClientRect();
                             window.scrollTo({
-                                top: rect.top + window.pageYOffset + -100,
+                                top: rect.top + window.scrollY + -100,
                                 behavior: 'smooth',
                             });
                         }
@@ -55,7 +55,7 @@ const MenuProjet = ({ projets, indexProjet, onChangeIndex }: { projets: TProjet[
                     }}
                 >
                     {projet.nomProjet}
-                </p>
+                </button>
             ))}
         </div>
     );
