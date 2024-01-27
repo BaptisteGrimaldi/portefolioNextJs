@@ -34,6 +34,10 @@ p {
     min-height: min-content;
 }
 
+.bgCouleurCyan {
+    background-color: rgb(20 184 166);
+}
+
 .textP {
     font-size: 14px;
 }
