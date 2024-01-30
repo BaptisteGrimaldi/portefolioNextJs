@@ -30,9 +30,13 @@ const ProjetCard = ({ nomProjet, description, enLigne, lienRepo, tagsTechnologie
                     </p>
                 ))}
             </div>
-            <div className="flex justify-center">
-                <iframe className="mt-7 sm:w-[400px]" width="250" height="250" src={`https://www.youtube.com/embed/${videoPresentation}`} title="Test youtube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-            </div>
+
+            {videoPresentation !== '' && (
+                <div className="flex justify-center">
+                    <iframe className="mt-7 sm:w-[400px]" width="250" height="250" src={`https://www.youtube.com/embed/${videoPresentation}`} title="Test youtube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                </div>
+            )}
+
             <p className="mt-5 text-center">Fait en : {date}</p>
         </div>
     );

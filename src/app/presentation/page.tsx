@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import Link from 'next/link';
 
 import { downloadFile } from '@/utils/downloadFile';
 import temoignages from '../../const/temoignage';
@@ -47,7 +46,9 @@ const Presentation = () => {
                         <p>Hormis cela, j&apos;aime beaucoup l&apos;économie et les marchés financiers. Ainsi que le jeux vidéo Civilization 6, et le jeu de cartes Magic: The Gathering.</p>
                     </div>
                     <div className="boutonCyanCss cursor-pointer hover:scale-105">
-                        <Link href={'./contact'}>Reserver un rendez-vous</Link>
+                        <a href="https://calendly.com/grimaldi-baptiste/prise-de-contact-client" target="_blank">
+                            Reserver un rendez-vous
+                        </a>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@ const Competences = () => {
             <div className="mx-auto flex max-w-[1400px] flex-col items-center xl:mt-10 xl:flex-row xl:justify-center">
                 <div className="flex flex-col items-center space-y-2 text-sm xl:w-5/12">
                     <div className="boutonCyanCss">
-                        <p className='pt-1'>Front-End</p>
+                        <p className="pt-1">Front-End</p>
                     </div>
                     <div className="mb-10 flex flex-col space-y-6">
                         <div className="flex flex-col items-center space-y-6 sm:flex-row sm:space-x-6">
@@ -52,11 +52,11 @@ const Competences = () => {
             </div>
             <AnimationsCompetences />
             <div className="mx-auto mt-10 flex w-fit flex-col items-center gap-y-8">
-                <p className='textP w-min'>Formation</p>
+                <p className="textP w-min">Formation</p>
                 <Image src="/assetCompetences/mikeCodeurSignature.webp" alt="logo udemy" width={350} height={350} className="ml-10" />
             </div>
 
-            <div className='mx-auto mt-20 flex w-fit flex-col gap-16 xl:flex-row'>
+            <div className="mx-auto mt-20 flex w-fit flex-col gap-16 xl:flex-row">
                 <Image src="/assetCompetences/logoReactMastery.png" alt="logo udemy" width={350} height={350} className="mx-auto" />
                 <Image src="/assetCompetences/logoTypescript.png" alt="logo udemy" width={350} height={350} className="mx-auto" />
             </div>

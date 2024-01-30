@@ -10,9 +10,9 @@
 .gradient-border-l::before {
     content: '';
     position: absolute;
-    left: -50px;
-    top: 50px;
-    width: 100px;
+    left: -69px;
+    top: 70px;
+    width: 140px;
     height: 2px;
     background: linear-gradient(to right, #dc0b0b, #12caca);
     transform: rotate(90deg);
@@ -31,9 +31,9 @@
     .gradient-border-l::before {
         content: '';
         position: absolute;
-        left: -60px;
-        top: 60px;
-        width: 120.8px;
+        left: -74px;
+        top: 74px;
+        width: 150px;
         height: 2px;
         background: linear-gradient(to right, #dc0b0b, #12caca);
         transform: rotate(90deg);
