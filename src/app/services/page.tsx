@@ -1,9 +1,7 @@
 'use client';
 
-
-import ContenuPopUp from "@/components/popUp/ContenuPopUp";
+import ContenuPopUp from '@/components/popUp/ContenuPopUp';
 const Service = () => {
-
     return (
         <div className="mt-28 flex flex-col">
             <h1 className="textH1 mx-auto w-min text-center text-red-600">Services</h1>
@@ -25,7 +23,7 @@ const Service = () => {
                     </div>
                 </div>
                 <div className="textP flex w-[400px] flex-col gap-y-6 rounded bg-red-600 p-5">
-                   <ContenuPopUp />
+                    <ContenuPopUp />
                 </div>
             </div>
         </div>

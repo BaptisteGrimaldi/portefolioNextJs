@@ -1,13 +1,14 @@
 'use client';
 
 import { useState } from 'react';
+import connectDb from '@/lib/actions/connectDb.action';
 
 const ContenuPopUp = () => {
     const [inputValue, setInputValue] = useState('');
     const [error, setError] = useState(false);
     const [insciptionNewsletter, setInsciptionNewsletter] = useState(false);
 
-    const cherckerSiRempli = () => {
+    const cherckerSiRempli = async () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
         if (inputValue === '' || !emailRegex.test(inputValue)) {
@@ -15,6 +16,7 @@ const ContenuPopUp = () => {
         } else {
             setError(false);
             setInsciptionNewsletter(true);
+            await connectDb();
         }
     };
     return (

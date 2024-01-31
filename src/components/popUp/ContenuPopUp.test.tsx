@@ -1,6 +1,11 @@
 import { render, fireEvent, screen } from '@testing-library/react';
 import ContenuPopUp from '@/components/popUp/ContenuPopUp';
 
+jest.mock('../../lib/actions/connectDb.action.ts', () => ({
+    __esModule: true,
+    default: jest.fn(),
+}));
+
 describe('Service Component - email validation', () => {
     it('validates emails correctly', async () => {
         render(<ContenuPopUp />);
