@@ -13,7 +13,7 @@ const temoignages = [
     }),
     Temoignage({
         citation: `'Désolé, en tant que développeur freelance junior, il m'est compliqué d'inventer 10 expériences quand on a que ${age} ans. À un moment donné, il faut bien commencer quelque part !'`,
-        image: '/assetPresentation/moiMidJourney.webp',
+        image: '/assetPresentation/moiMidJourney.png',
         nom: 'Votre serviteur',
         poste: 'Developpeur Web',
         entreprise: 'Freelance',
