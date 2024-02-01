@@ -1,6 +1,6 @@
 'use client';
 import NavBarBureau from './NavBarBureau';
-import NavBarPhone from './NavBarPhone';
+import NavBarPhone from './NavBarTel';
 import { useState } from 'react';
 
 const NavBarGlobal = () => {

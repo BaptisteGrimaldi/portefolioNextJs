@@ -25,7 +25,7 @@ const ContenuPopUp = () => {
             <p className=" text-white">Ne manquez aucune tendance, astuce ou mise à jour dans le monde du développement web. Inscrivez-vous dès maintenant à ma newsletter hebdomadaire :</p>
             <input type="text" className=" w-full text-center" value={insciptionNewsletter ? '' : inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder="Votre Email" />
             {error && <p className="mx-auto w-min whitespace-nowrap text-black">Veuillez remplir le champ ci dessus.</p>}
-            <button className="bgCouleurCyan mx-auto flex w-min justify-center whitespace-nowrap rounded px-4 py-1 text-white hover:scale-105" onClick={cherckerSiRempli}>
+            <button className="bgCouleurCyan mx-auto flex w-min justify-center whitespace-nowrap rounded px-4 py-1 text-white hover:scale-105 max-sm:whitespace-normal" onClick={cherckerSiRempli}>
                 Je veux recevoir la newsletter
             </button>
             {insciptionNewsletter && <p className="mx-auto w-min whitespace-nowrap text-black">Vous êtes inscrit à la newsletter</p>}
