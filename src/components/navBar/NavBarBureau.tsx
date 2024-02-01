@@ -13,7 +13,7 @@ const NavBarBureau = (props: Props) => {
 
     function handleTabClick(tab: string) {
         setActiveTab(tab);
-        router.push(`${process.env.url?.toString()}${tab}`);
+        router.push(`${tab}`);
     }
 
     useEffect(() => {
