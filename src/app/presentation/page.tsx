@@ -1,10 +1,9 @@
 'use client';
 import Image from 'next/image';
-import React, {  useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import { downloadFile } from '@/utils/downloadFile';
 import temoignages from '../../const/temoignage';
-import connectDb from '@/lib/actions/connectDb.action';
 
 
 const Presentation = () => {
@@ -26,11 +25,6 @@ const Presentation = () => {
             return temoignages[newIndex];
         });
     };
-
-    useEffect(() => {
-        connectDb();
-    }, []);
-
 
     return (
         <div className="absolute left-1/2 z-0 mt-28 w-11/12 -translate-x-1/2">

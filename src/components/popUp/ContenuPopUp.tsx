@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import connectDb from '@/lib/actions/connectDb.action';
+import { addLead } from '@/lib/actions/connectDb.action';
 
 const ContenuPopUp = () => {
     const [inputValue, setInputValue] = useState('');
@@ -16,7 +16,7 @@ const ContenuPopUp = () => {
         } else {
             setError(false);
             setInsciptionNewsletter(true);
-            await connectDb();
+            await addLead(inputValue);
         }
     };
     return (

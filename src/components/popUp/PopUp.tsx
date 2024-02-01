@@ -9,6 +9,9 @@ const PopUp = () => {
     const [showPopup, setShowPopup] = useState(false);
 
     useEffect(() => {
+
+        console.log('Test');
+
         const timer = setTimeout(() => {
             setShowPopup(true);
         }, 10000);
