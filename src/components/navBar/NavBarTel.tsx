@@ -7,7 +7,7 @@ type Props = {
     switchNavBar: () => void;
 };
 
-const NavBarPhone = (props: Props) => {
+const NavBarTel = (props: Props) => {
     if (props.visible) {
         return (
             <header className="fixed left-0 top-0 z-50 h-full w-full bg-red-600">
@@ -57,4 +57,4 @@ const NavBarPhone = (props: Props) => {
     }
 };
 
-export default NavBarPhone;
+export default NavBarTel;

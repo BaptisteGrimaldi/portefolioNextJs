@@ -1,6 +1,6 @@
 'use client';
 import NavBarBureau from './NavBarBureau';
-import NavBarPhone from './NavBarTel';
+import NavBarTel from './NavBarTel';
 import { useState } from 'react';
 
 const NavBarGlobal = () => {
@@ -13,7 +13,7 @@ const NavBarGlobal = () => {
     return (
         <div>
             <NavBarBureau visible={visible} switchNavBar={handleNavBar} />
-            <NavBarPhone visible={!visible} switchNavBar={handleNavBar} />
+            <NavBarTel visible={!visible} switchNavBar={handleNavBar} />
         </div>
     );
 };
