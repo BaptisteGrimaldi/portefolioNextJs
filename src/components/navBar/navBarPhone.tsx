@@ -15,7 +15,7 @@ const NavBarPhone = (props: Props) => {
                 <div className=" flex h-full flex-col items-center text-base ">
                     <div className=" mt-9 flex justify-center">
                         <div className="flex flex-col  items-center space-y-3">
-                            <Image src="/assetPresentation/moiMidJourney.webp" alt="Avatar Midjourney" width={180} height={180} className="rounded-full" />
+                            <Image src="/assetPresentation/moiMidJourney.png" alt="Avatar Midjourney" width={180} height={180} className="rounded-full" />
                             <div className="flex items-center">
                                 <p className="text-white">BAPTISTE GRIMALDI</p>
                             </div>

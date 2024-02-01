@@ -30,7 +30,7 @@ const Presentation = () => {
         <div className="absolute left-1/2 z-0 mt-28 w-11/12 -translate-x-1/2">
             <div className="mx-auto flex h-3/6 max-w-6xl flex-col items-center lg:flex-row ">
                 <div className="mb-6 flex w-6/12 justify-center xl:w-6/12 ">
-                    <Image src="/assetPresentation/moiMidJourney.webp" alt="avatarMidjourney" width={500} height={500} />
+                    <Image src="/assetPresentation/moiMidJourney.png" alt="avatarMidjourney" width={500} height={500} />
                 </div>
 
                 <div className="textP flex w-10/12 flex-col items-center justify-center text-justify xl:w-6/12">

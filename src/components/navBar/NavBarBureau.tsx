@@ -41,7 +41,7 @@ const NavBarBureau = (props: Props) => {
                     <div className="flex w-4/12 justify-center">
                         <div className="flex justify-between">
                             <div className="mr-4">
-                                <Image src="/assetPresentation/moiMidJourney.webp" alt="Description de l'image" width={65} height={70} className="my-2 rounded-full" />
+                                <Image src="/assetPresentation/moiMidJourney.png" alt="Description de l'image" width={65} height={70} className="my-2 rounded-full" />
                             </div>
 
                             <div className="flex items-center">
