@@ -36,7 +36,7 @@ const Presentation = () => {
                 <div className="textP flex w-10/12 flex-col items-center justify-center text-justify xl:w-6/12">
                     <div className="flex h-3/5 w-10/12 flex-col justify-between ">
                         <p>
-                            Bonjour je m&apos;appelle <span className="text-cyan">Baptiste Grimaldi</span>, je suis un développeur web <span className="text-red-600">full-stack</span> <span className="text-red-600">autodidacte</span> avec une préférence pour le backend.
+                            Bonjour je m&apos;appelle <span className="text-cyan">Baptiste Grimaldi</span>, je suis un développeur web <span className="text-red-600">Front-End</span> <span className="text-red-600">autodidacte</span> avec de solides connaissances en Back-End.
                         </p>
                         <br />
                         <p>
