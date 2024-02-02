@@ -35,6 +35,6 @@ export const listeProjets: TProjet[] = [
         lienRepo: 'https://github.com/BaptisteGrimaldi/portefolioNextJs',
         tagsTechnologie: ['Next JS','MongoDB', 'Tailwind CSS', 'Typescript'],
         videoPresentation: '',
-        date: '2023',
+        date: '2024',
     },
 ];
