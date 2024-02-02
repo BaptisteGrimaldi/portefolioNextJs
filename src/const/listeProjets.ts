@@ -31,9 +31,9 @@ export const listeProjets: TProjet[] = [
     {
         nomProjet: 'Portefolio Personnel',
         description: 'Le portefolio que vous êtes en train de regarder en ce moment meme !',
-        enLigne: '',
-        lienRepo: '',
-        tagsTechnologie: ['Next JS', 'Tailwind CSS', 'Typescript'],
+        enLigne: 'https://www.baptistegrimaldi.dev/',
+        lienRepo: 'https://github.com/BaptisteGrimaldi/portefolioNextJs',
+        tagsTechnologie: ['Next JS','mongoDb', 'Tailwind CSS', 'Typescript'],
         videoPresentation: '',
         date: '2023',
     },
