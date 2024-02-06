@@ -44,7 +44,7 @@ const Presentation = () => {
                             prise de responsabilités et à l&apos;autonomie.
                         </p>
                         <br />
-                        <p>Hormis cela, j&apos;aime beaucoup l&apos;économie et les marchés financiers. Ainsi que le jeux vidéo Civilization 6, et le jeu de cartes Magic: The Gathering.</p>
+                        <p>Hormis cela, j&apos;aime beaucoup l&apos;économie et les marchés financiers. Ainsi que le jeu vidéo Civilization 6, et le jeu de cartes Magic: The Gathering.</p>
                     </div>
                     <div className="boutonCyanCss cursor-pointer hover:scale-105">
                         <a href="https://calendly.com/grimaldi-baptiste/prise-de-contact-client" target="_blank">
