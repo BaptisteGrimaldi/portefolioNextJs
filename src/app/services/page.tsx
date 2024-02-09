@@ -9,7 +9,7 @@ const Service = () => {
                 <div className=" w-[400px] rounded bg-red-600 p-8 text-white">
                     <h1 className="mx-auto max-w-[200px] rounded border-2 border-solid py-2 text-center text-base ">
                         Forfait Classic <br />
-                        300€/jour
+                        380€/jour
                     </h1>
                     <div className="mx-auto mt-5 flex flex-col gap-y-6 ">
                         <p>-Création d’un site internet / SaaS / Application Web</p>
