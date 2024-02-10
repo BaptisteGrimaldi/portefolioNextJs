@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 import { downloadFile } from '@/utils/downloadFile';
 import temoignages from '../../const/temoignage';
 
-
 const Presentation = () => {
     const [indexTemoignage, setIndexTemoignage] = useState(0);
     const [temoignage, setTemoignage] = useState(temoignages[indexTemoignage]);
