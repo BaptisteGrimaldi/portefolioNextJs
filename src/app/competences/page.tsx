@@ -52,7 +52,7 @@ const Competences = () => {
             </div>
             <AnimationsCompetences />
             <div className="mx-auto mt-10 flex w-fit flex-col items-center gap-y-8">
-                <p className="textP w-min">Formation</p>
+                <p className="textP text-center underline underline-offset-2">Formation Suivi</p>
                 <Image src="/assetCompetences/mikeCodeurSignature.webp" alt="logo udemy" width={350} height={350} className="ml-10" />
             </div>
 
