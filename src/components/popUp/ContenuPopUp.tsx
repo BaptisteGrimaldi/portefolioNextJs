@@ -29,7 +29,7 @@ const ContenuPopUp = () => {
             <p className=" text-white">Ne manquez aucune <span className='underline underline-offset-2'>nouveauté</span> , <span className='underline underline-offset-2'>astuce</span>  ou <span className='underline underline-offset-2'>mise à jour</span> dans le monde du développement web.<br/> <br/> Inscrivez-vous gratuitement à ma newsletter hebdomadaire :</p>
             <input type="text" className=" w-full text-center" value={insciptionNewsletter ? '' : inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder="Votre Email" />
             {error && <p className="mx-auto w-min whitespace-nowrap text-black">Veuillez remplir le champ ci dessus.</p>}
-            <button className="bgCouleurCyan mx-auto flex w-min justify-center whitespace-nowrap rounded px-4 py-1 text-white hover:scale-105 max-sm:whitespace-normal" onClick={cherckerSiRempli}>
+            <button className="bgCouleurCyan mx-auto flex w-min justify-center whitespace-nowrap rounded px-4 py-1 text-white hover:scale-105 max-sm:mx-0 max-sm:whitespace-nowrap" onClick={cherckerSiRempli}>
                 Je veux recevoir la newsletter
             </button>
             {insciptionNewsletter && <p className="mx-auto w-min whitespace-nowrap text-black">Vous êtes inscrit à la newsletter</p>}
