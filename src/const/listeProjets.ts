@@ -29,8 +29,8 @@ export const listeProjets: TProjet[] = [
         date: '2023',
     },
     {
-        nomProjet: 'Portefolio Personnel',
-        description: 'Le portefolio que vous êtes en train de regarder en ce moment meme !',
+        nomProjet: 'Portfolio Personnel',
+        description: 'Le portfolio que vous êtes en train de regarder en ce moment meme !',
         enLigne: 'https://www.baptistegrimaldi.dev/',
         lienRepo: 'https://github.com/BaptisteGrimaldi/portefolioNextJs',
         tagsTechnologie: ['Next JS', 'MongoDB', 'Tailwind CSS', 'Typescript'],

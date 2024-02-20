@@ -8,7 +8,7 @@ const Contact = () => {
                 <div className="flex flex-col items-center justify-center">
                     <a target="_blank" href="https://calendly.com/grimaldi-baptiste/prise-de-contact-client" className="flex flex-col items-center">
                         <div className="rounded bg-bouton px-3 pt-1 text-white hover:scale-105">
-                            <p>Reserver un rendez-vous</p>
+                            <p>Reservez un rendez-vous</p>
                         </div>
                         <Image src="/assetContact/logoCalendly.webp" alt="logo Calendly" width={200} height={200}></Image>
                     </a>

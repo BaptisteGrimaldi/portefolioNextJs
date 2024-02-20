@@ -17,7 +17,7 @@ const Service = () => {
                     </div>
                     <div className="boutonCyanCss mx-auto cursor-pointer hover:scale-105">
                         <a href="https://calendly.com/grimaldi-baptiste/prise-de-contact-client" target="_blank">
-                            Reserver un rendez-vous
+                            Reservez un rendez-vous
                         </a>
                     </div>
                 </div>

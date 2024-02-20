@@ -37,7 +37,7 @@ const ProjetCard = ({ nomProjet, description, enLigne, lienRepo, tagsTechnologie
                 </div>
             )}
 
-            <p className="mt-5 text-center">Fait en : {date}</p>
+            <p className="mt-5 text-center">Réalisé en {date}</p>
         </div>
     );
 };

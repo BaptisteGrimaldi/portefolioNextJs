@@ -9,8 +9,8 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Portefolio Baptiste Grimaldi',
-    description: 'Portefolio Baptiste Grimaldi',
+    title: 'Portfolio Baptiste Grimaldi',
+    description: 'Portfolio Baptiste Grimaldi',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
