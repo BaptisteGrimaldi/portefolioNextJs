@@ -52,13 +52,13 @@ const NavBarBureau = (props: Props) => {
 
                     <div className="flex w-8/12  justify-center">
                         <div className="flex items-center  justify-between space-x-5 text-white lg:space-x-14 xl:space-x-20">
-                            <div className={` ${activeTab === '/presentation' || activeTab === '/' ? 'border-b-2 border-solid border-teal-500' : ''} mt-1`} onClick={() => handleTabClick('/presentation')}>
+                            <div className={` ${activeTab === '/presentation' || activeTab === '/' ? 'border-b-2 border-solid border-teal-500' : ''} mt-1`} onClick={() => handleTabClick('/presentation')} >
                                 <p className="cursor-pointer hover:scale-105 hover:opacity-50">
                                     <Link href="/presentation">Présentation</Link>
                                 </p>
                             </div>
 
-                            <div className={` ${activeTab === '/competences' ? 'border-b-2 border-solid border-teal-500' : ''} mt-1`} onClick={() => handleTabClick('/competences')}>
+                            <div className={` ${activeTab === '/competences' ? 'border-b-2 border-solid border-teal-500' : ''} mt-1`} onClick={() => handleTabClick('/competences')} data-testid="btnCompetences">
                                 <p className="cursor-pointer hover:scale-105 hover:opacity-50">
                                     <Link href="./competences">Compétences</Link>
                                 </p>

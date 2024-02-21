@@ -9,7 +9,7 @@ const Competences = () => {
             <div className="mx-auto flex max-w-[1400px] flex-col items-center xl:mt-10 xl:flex-row xl:justify-center">
                 <div className="flex flex-col items-center space-y-2 text-sm xl:w-5/12">
                     <div className="boutonCyanCss">
-                        <p className="pt-1">Front-End</p>
+                        <p className="pt-1" data-testid="titreFrontEndCompetence">Front-End</p>
                     </div>
                     <div className="mb-10 flex flex-col space-y-6">
                         <div className="flex flex-col items-center space-y-6 sm:flex-row sm:space-x-6">
@@ -36,7 +36,7 @@ const Competences = () => {
                 </div>
                 <div className="mt-7 flex flex-col items-center space-y-2 text-sm  xl:w-5/12">
                     <div className="mt-8 w-min whitespace-nowrap rounded bg-red-600 px-2 pb-1 pt-2 text-white">
-                        <p>Back-End</p>
+                        <p data-testid="titreBackEndCompetence">Back-End</p>
                     </div>
                     <div className="flex flex-col items-center space-y-6">
                         <div className="mt-9 flex justify-center">
