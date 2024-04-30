@@ -6,6 +6,7 @@ describe('template spec', () => {
   it('passes', () => {
     cy.visit('/')
     cy.get('[data-testid="btnCompetences"]').click()
+    cy.wait(3000)
     cy.url().should('include', '/competences')
     cy.get('[data-testid="titreFrontEndCompetence"]').should('be.visible')
     cy.get('[data-testid="titreBackEndCompetence"]').should('be.visible')

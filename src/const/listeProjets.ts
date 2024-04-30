@@ -25,7 +25,7 @@ export const listeProjets: TProjet[] = [
         enLigne: '',
         lienRepo: '',
         tagsTechnologie: ['React JS', 'NodeJS', 'FireBase', 'Typescript'],
-        videoPresentation: 'nRCyRaYEhVA',
+        videoPresentation: '',
         date: '2023',
     },
     {
